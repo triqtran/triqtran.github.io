@@ -83,14 +83,14 @@
 			padding-bottom: 5%;
 		}
 		.prevent{
-			position: relative;
-		    width: 30%;
-		    height: 20em;
+			position: absolute;
+		    width: 23.3em;
+		    height: 21em;
 		    background-color: transparent;
 		    border-radius: 5%;
 		    margin-left: 20%;
 		    margin-right: 20%;
-		    margin-top: -27%;
+		    margin-top: 3.1%;
 		    z-index: 3;
 		}
 	</style>
@@ -302,8 +302,11 @@
 			}
 
 			$('.btnStart').click(function(){
+				$('.prevent').show();
+				stop();
 				answer = 0;
 				wrong = 0;
+				s = 30;
 				$('#s').html('00');
 				$('.number').html(answer);
 				$('.wrong').html(wrong);
@@ -397,6 +400,7 @@
 	</div>
 
 	<input type="button" value="Start" class="btn btnStart" />
+	<div class="prevent"></div>
 	<table class="board-game" id="board">
 		<tr class="row-game">
 			<td class="cel cell-game-1 first-top">
@@ -455,6 +459,5 @@
 			</td>
 		</tr>
 	</table>
-	<div class="prevent"></div>
 </body>
 </html>
