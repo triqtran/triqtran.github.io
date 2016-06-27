@@ -136,6 +136,7 @@
 			        if(answer < 8){
 			        	alert('Time out, you are failed!');
 			        	$('.btnAnswer').prop('disabled',false);
+			        	$('.btnStart').prop('disabled',false);
 			        }
 			        else
 			        	alert('Time out, you are winned!');
@@ -279,6 +280,7 @@
 						stop();
 						alert('You are failed!...');
 						$('.btnAnswer').prop('disabled',false);
+						$('.btnStart').prop('disabled',false);
 						s = 30;
 						$('.prevent').show();
 					}
@@ -286,6 +288,7 @@
 						if(answer == 8){
 							stop();
 							alert('You are winned!...');
+							$('.btnStart').prop('disabled',false);
 							s = 30;	
 							$('.prevent').show();
 						}
@@ -313,6 +316,7 @@
 			}
 
 			$('.btnStart').click(function(){
+				$('.btnStart').prop('disabled',true);
 				$('.prevent').show();
 				stop();
 				answer = 0;
