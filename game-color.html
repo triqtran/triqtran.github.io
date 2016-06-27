@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Catch to correct color</title>
+	<style type="text/css">
+		body{
+			background-color: #295f50;
+		}
+		.btn{
+			width: 30%;
+			background-color: #858136;
+			color: #FFFFFF;
+			font-size: 1.5em;
+			margin-top: 0.3em;
+			margin-left: 20%;
+			position: relative;
+			z-index: 2;
+		}
+		.btnAnswer{
+			width: 30%;
+			position: absolute;
+			margin-left: 65%;
+    		margin-top: 13em;	
+		}
+
+		.clock{
+			position: absolute;
+	    	margin-left: 68%;
+	    	margin-top: 6em;
+	    	color: #FFFFFF;
+	    	font-size: 4em;
+		}
+
+		.board-game{
+			width: 30%;
+			height: 20em;
+			border: 1px solid #d8d8d8;
+			border-radius: 5%;
+			margin-left: 20%;
+			margin-right: 20%;
+			margin-top: 5%;
+			position: relative;
+			z-index: 2;
+
+		}
+
+		.row-game{
+			width: 24.6%;
+			height: 24.6%;
+			background-color: #7da9b1;
+		}
+
+		.cel h1{
+			color: #d4d4d4;
+		}
+
+		.first-top{
+			border-top-left-radius: 18%;
+		}
+		.last-top{
+			border-top-right-radius: 18%;	
+		}
+		.first-bottom{
+			border-bottom-left-radius: 18%;
+		}
+		.last-bottom{
+			border-bottom-right-radius: 18%;	
+		}
+
+		.fill-answer{
+			position: absolute;
+			width: 30%;
+			background-color: #63A60F;			
+		    margin-left: 65%;
+		    margin-top: 9em;
+		    color: #FFFFFF;
+		    border-radius: 2%;
+		    border: 1px solid #FFFFFF;
+		}
+		.matching{
+			position: relative;
+			margin-left: 15%;
+			padding-bottom: 5%;
+		}
+		.prevent{
+			position: absolute;
+		    width: 23.3em;
+		    height: 21em;
+		    background-color: transparent;
+		    border-radius: 5%;
+		    margin-left: 20%;
+		    margin-right: 20%;
+		    margin-top: 3.1%;
+		    z-index: 3;
+		}
+		.rule{
+			position: absolute;
+		    width: 30%;
+		    height: 8em;
+		    background-color: #0fad98;
+		    margin-left: 65%;
+		    margin-top: 0em;
+		    color: #FFFFFF;
+		    border-radius: 2%;
+		    border: 1px solid #FFFFFF;
+		}
+	</style>
+	<script type="text/javascript" src="bootflat.github.io-master/js/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript">
+
+		
+
+		$(document).ready(function(){
+
+			var colorIndex = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F'];
+			var colorData = ['','','','','','','',''];
+			var checkIndex = [-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1];
+			var checkColor = ['',''];
+			var cellArray = [];
+			var stackColor = {'color_1':undefined,
+							  'i1':undefined,
+							  'color_2':undefined,
+							  'i2':undefined};
+			var wrong = 0;
+			var answer = 0;
+
+			var s = 30;
+	        
+	        var timeout = null; // Timeout
+	        
+	        function start(){
+	            // Nếu số giờ = -1 tức là đã hết giờ, lúc này:
+			    //  - Dừng chương trình
+			    if (s == -1){
+			        clearTimeout(timeout);
+			        if(answer < 8){
+			        	alert('Time out, you are failed!');
+			        	$('.btnAnswer').prop('disabled',false);
+			        }
+			        else
+			        	alert('Time out, you are winned!');
+			        s = 30;
+			        answer = 0;
+			        wrong = 0;
+			        return false;
+			    }
+			 
+			    /*BƯỚC 1: HIỂN THỊ ĐỒNG HỒ*/
+			    if(s < 10)
+			    	$('#s').html('0'+s);
+			    else
+			    	$('#s').html(s);
+			 
+			    /*BƯỚC 1: GIẢM PHÚT XUỐNG 1 GIÂY VÀ GỌI LẠI SAU 1 GIÂY */
+			    timeout = setTimeout(function(){
+			        s--;
+			        start();
+			    }, 1000);
+	        }
+
+	        function stop(){
+	        	clearTimeout(timeout);
+	        }
+
+			function initialColor(){
+				var color = '#';
+				for(var i = 0; i < 6; i++){
+					var rand = Math.floor(Math.random() * 16);
+					if(rand > 15){
+						rand = 15;
+					}
+					color = color + colorIndex[rand];
+				}
+				return color;
+			}
+
+			function isExist(index){
+				for(var i = 0; i < checkIndex.length; i++){
+					if(checkIndex[i] != -1){
+						if(checkIndex[i] == index){
+							return true;
+						}
+					}
+				}
+				return false;
+			}
+
+			function showBackground(){
+				cellArray = [];
+				var temp = 0;
+				for(var i = 0; i < colorData.length; i++){
+					var i1 = checkIndex[temp]+1;
+					var i2 = checkIndex[temp+1]+1;
+					$('.cell-game-'+i1).css('background-color',colorData[i]);
+					$('.cell-game-'+i2).css('background-color',colorData[i]);
+					temp = temp +2;
+					var objColor = {'i1':i1,
+									'i2':i2,
+									'color':colorData[i]};
+					cellArray.push(objColor);
+				}
+			}
+
+			function createBoardGame(){
+				
+				checkIndex = [-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1];
+
+				for(var i = 0; i < 8; i++){
+					colorData[i] = initialColor();
+				} 
+				for(var i = 0; i < 16; i++){
+					var index = Math.round(Math.random() * 15);
+					while(isExist(index) == true)
+						index = Math.round(Math.random() * 15);
+					checkIndex[i] = index;
+				}
+				showBackground();
+				setTimeout(function() {
+					$('.cel').css('background-color','#7da9b1');
+					console.log('Changed!...');
+				}, 7000);
+				
+			}
+
+			function getBackground(index){
+				for(var i = 0; i < cellArray.length; i++){
+					if(cellArray[i].i1 == index)
+						return cellArray[i].color;
+					if(cellArray[i].i2 == index)
+						return cellArray[i].color;
+				}
+				return '';
+			}
+
+			function compareStackColor(){
+				if(stackColor.color_1 == stackColor.color_2){
+					$('.cell-game-'+stackColor.i1).css('background-color',stackColor.color_1);
+					$('.cell-game-'+stackColor.i2).css('background-color',stackColor.color_2);
+					answer++;
+					$('.number').html(answer);
+				}
+				else{
+					wrong++;
+					$('.wrong').html(wrong);
+				}
+				stackColor = {'color_1':undefined,
+							  'i1':undefined,
+						  	  'color_2':undefined,
+							  'i2':undefined};
+			}
+
+			function checkStackColor(index){
+				if(stackColor.color_1 == undefined && stackColor.color_2 == undefined){
+					stackColor.color_1 = getBackground(index);
+					stackColor.i1 = index;
+				}
+				else if(stackColor.color_1 == undefined && stackColor.color_2 != undefined){
+					if(stackColor.i2 != index){
+						stackColor.color_1 = getBackground(index);
+						stackColor.i1 = index;
+						compareStackColor();
+					}		
+				}
+				else if(stackColor.color_1 != undefined && stackColor.color_2 == undefined){
+					if(stackColor.i1 != index){
+						stackColor.color_2 = getBackground(index);
+						stackColor.i2 = index;
+						compareStackColor();
+					}
+				}
+			}
+
+			function result(index){
+				$('.cell-game-'+index).css('background-color','#000000');
+				setTimeout(function() {
+					$('.cell-game-'+index).css('background-color','#7da9b1');
+					checkStackColor(index);
+					if(wrong > 3){
+						stop();
+						alert('You are failed!...');
+						$('.btnAnswer').prop('disabled',false);
+						s = 30;
+						$('.prevent').show();
+					}
+					else{
+						if(answer == 8){
+							stop();
+							alert('You are winned!...');
+							s = 30;	
+							$('.prevent').show();
+						}
+					}
+				}, 200);	
+			}
+
+			$.cssHooks.backgroundColor = {
+			    get: function(elem) {
+			        if (elem.currentStyle)
+			            var bg = elem.currentStyle["background-color"];
+			        else if (window.getComputedStyle)
+			            var bg = document.defaultView.getComputedStyle(elem,
+			                null).getPropertyValue("background-color");
+			        if (bg.search("rgb") == -1)
+			            return bg;
+			        else {
+			            bg = bg.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+			            function hex(x) {
+			                return ("0" + parseInt(x).toString(16)).slice(-2);
+			            }
+			            return "#" + hex(bg[1]) + hex(bg[2]) + hex(bg[3]);
+			        }
+			    }
+			}
+
+			$('.btnStart').click(function(){
+				$('.prevent').show();
+				stop();
+				answer = 0;
+				wrong = 0;
+				s = 30;
+				$('#s').html('00');
+				$('.number').html(answer);
+				$('.wrong').html(wrong);
+				$('.btnAnswer').prop('disabled',true);
+				createBoardGame();
+				setTimeout(function() {
+					start();
+					$('.prevent').hide();
+				}, 7000);
+
+			});
+			
+			$('.btnAnswer').click(function(){
+				showBackground();
+				$('.prevent').show();
+			});
+
+			$('.cell-game-1').click(function(){
+				result(1);
+			});	
+			$('.cell-game-2').click(function(){
+				result(2);
+			});	
+			$('.cell-game-3').click(function(){
+				result(3);
+			});	
+			$('.cell-game-4').click(function(){
+				result(4);
+			});	
+			$('.cell-game-5').click(function(){
+				result(5);
+			});	
+			$('.cell-game-6').click(function(){
+				result(6);
+			});	
+			$('.cell-game-7').click(function(){
+				result(7);
+			});	
+			$('.cell-game-8').click(function(){
+				result(8);
+			});
+			$('.cell-game-9').click(function(){
+				result(9);
+			});	
+			$('.cell-game-10').click(function(){
+				result(10);
+			});	
+			$('.cell-game-11').click(function(){
+				result(11);
+			});	
+			$('.cell-game-12').click(function(){
+				result(12);
+			});	
+			$('.cell-game-13').click(function(){
+				result(13);
+			});	
+			$('.cell-game-14').click(function(){
+				result(14);
+			});	
+			$('.cell-game-15').click(function(){
+				result(15);
+			});	
+			$('.cell-game-16').click(function(){
+				result(16);
+			});	
+		});
+	</script>
+
+</head>
+<body>
+	<h1 style="margin-left: 30%;color: #FFFFFF;">TRY TO REMEMBER COLORS</h1>
+	<div class="rule">
+		<p style="margin-left:45%;margin-right: 45%"><b>RULE</b></p>
+		<p style="margin-left:3%">You have 7 seconds to remember 8 color-couples. Then, you must match cells together during 30 seconds. If you don't complete game in limited time, you're failed!...Goodluck!</p>
+	</div>
+	<div class="fill-answer">
+		<h2 align="center">Matching the correct answer</h2>
+		<div class="matching">
+			<p>Answer: <span class="number">0</span></p>
+			<p>Wrong: <span class="wrong">0</span></p>
+		</div>
+	</div>
+	<input type="button" disabled value="Answer" class="btn btnAnswer" />
+
+	<div class="clock">
+		<div>
+			<span id="h">00</span> :
+            <span id="m">00</span> :
+            <span id="s">00</span>
+        </div>
+	</div>
+
+	<input type="button" value="Start" class="btn btnStart" />
+	<div class="prevent"></div>
+	<table class="board-game" id="board">
+		<tr class="row-game">
+			<td class="cel cell-game-1 first-top">
+				<h1 align="center">1</h1>
+			</td>
+			<td class="cel cell-game-2">
+				<h1 align="center">2</h1>
+			</td>
+			<td class="cel cell-game-3">
+				<h1 align="center">3</h1>
+			</td>
+			<td class="cel cell-game-4 last-top">
+				<h1 align="center">4</h1>
+			</td>
+		</tr>
+		<tr class="row-game">
+			<td class="cel cell-game-5">
+				<h1 align="center">5</h1>
+			</td>
+			<td class="cel cell-game-6">
+				<h1 align="center">6</h1>
+			</td>
+			<td class="cel cell-game-7">
+				<h1 align="center">7</h1>
+			</td>
+			<td class="cel cell-game-8">
+				<h1 align="center">8</h1>
+			</td>
+		</tr>
+		<tr class="row-game">
+			<td class="cel cell-game-9">
+				<h1 align="center">9</h1>
+			</td>
+			<td class="cel cell-game-10">
+				<h1 align="center">10</h1>
+			</td>
+			<td class="cel cell-game-11">
+				<h1 align="center">11</h1>
+			</td>
+			<td class="cel cell-game-12">
+				<h1 align="center">12</h1>
+			</td>
+		</tr>
+		<tr class="row-game">
+			<td class="cel cell-game-13 first-bottom">
+				<h1 align="center">13</h1>
+			</td>
+			<td class="cel cell-game-14">
+				<h1 align="center">14</h1>
+			</td>
+			<td class="cel cell-game-15">
+				<h1 align="center">15</h1>
+			</td>
+			<td class="cel cell-game-16 last-bottom">
+				<h1 align="center">16</h1>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
