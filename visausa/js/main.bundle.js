@@ -94,6 +94,8 @@ var main = {
         $menu.toggle('slow');
       });
     }
+
+    main.setSlideshow();
   },
   isMobile: function isMobile() {
     var isMobile = false; //initiate as false
@@ -107,6 +109,11 @@ var main = {
   },
   isMinWidth: function isMinWidth() {
     return window.innerWidth < 992;
+  },
+  setSlideshow: function setSlideshow() {
+    $('#dg-container').gallery({
+      autoplay: true
+    });
   }
 };
 $(function () {

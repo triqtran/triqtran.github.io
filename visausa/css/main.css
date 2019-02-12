@@ -775,7 +775,9 @@ body {
         width: 50px; }
       #main-body .content .content-main img.wrap-60p-right {
         margin-right: 20%;
-        margin-top: 30px; } }
+        margin-top: 30px; }
+      #main-body .content .content-main .dg-container .dg-wrapper a > img {
+        width: 80% !important; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   #header {
