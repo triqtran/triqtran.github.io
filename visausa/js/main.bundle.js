@@ -72,10 +72,15 @@ var main = {
     //handle javascript to process
     console.log('Hello init project!');
 
-    if (main.isMobile()) {
+    if (main.isMobile() || main.isMinWidth()) {
       $('.nav-toggle').click(function () {
-        $('.overlay').toggle('slow');
-        $('.nav-list').toggle('slow');
+        $('.overlay').toggle('slow'); //$('.nav-list').toggle('slow');
+
+        if ($('.nav-list').hasClass('show')) {
+          $('.nav-list').removeClass('show');
+        } else {
+          $('.nav-list').addClass('show');
+        }
       });
       $('.nav-item-text').click(function () {
         var $menu = $(this).parent().find('.dropdown-menu');
@@ -99,6 +104,9 @@ var main = {
     }
 
     return isMobile;
+  },
+  isMinWidth: function isMinWidth() {
+    return window.innerWidth < 992;
   }
 };
 $(function () {
@@ -109,7 +117,10 @@ var numPanels = $('.panel').length; // if a panel is open, lower its z-idx
 
 function checkZ($aPanel) {
   if ($aPanel.hasClass('open')) {
-    $aPanel.css('z-index', '1');
+    $aPanel.css('z-index', '5');
+    setTimeout(function () {
+      $aPanel.css('z-index', '1');
+    }, 500);
   } else {
     // set z-index back to original stored in data
     zIdx = $aPanel.data('zIdx');
