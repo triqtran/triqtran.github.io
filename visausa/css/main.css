@@ -397,7 +397,7 @@ body {
         border-left: none; }
   #header .main-header {
     height: 70%;
-    background: url("../../../../images/main-header-bg.png");
+    background: url("../images/main-header-bg.png");
     background-size: cover; }
     #header .main-header .logo {
       display: -webkit-box;
@@ -493,12 +493,12 @@ body {
   #main-body .content.bg-gray-content {
     background: #f4f6f9; }
   #main-body .content.bg-flag-left {
-    background-image: url("/images/bg-flag-blue.png");
+    background-image: url("../images/bg-flag-blue.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left top; }
   #main-body .content.bg-flag-right {
-    background-image: url("/images/bg-flag-red.png");
+    background-image: url("../images/bg-flag-red.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right bottom; }
@@ -526,9 +526,12 @@ body {
     padding: 2rem 0; }
     #main-body .content .content-main img {
       width: 100%; }
-      #main-body .content .content-main img.wrap-60p-right {
-        width: 60%;
-        float: right; }
+      #main-body .content .content-main img.wrap-60p {
+        width: 60%; }
+      #main-body .content .content-main img.wrap-70p {
+        width: 70%; }
+      #main-body .content .content-main img.wrap-80p {
+        width: 80%; }
     #main-body .content .content-main .paragraph {
       text-align: justify;
       color: #606060;
@@ -568,7 +571,7 @@ body {
         margin-left: 5px; }
 
 #main-body .ic-protected {
-  background-image: url("/images/ic-protected.png");
+  background-image: url("../images/ic-protected.png");
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -773,7 +776,7 @@ body {
       #main-body .content .content-title .line-title .line {
         height: 2px;
         width: 50px; }
-      #main-body .content .content-main img.wrap-60p-right {
+      #main-body .content .content-main img.wrap-60p, #main-body .content .content-main img.wrap-70p, #main-body .content .content-main img.wrap-80p {
         margin-right: 20%;
         margin-top: 30px; }
       #main-body .content .content-main .dg-container .dg-wrapper a > img {
