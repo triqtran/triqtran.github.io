@@ -453,7 +453,7 @@ body {
           #header .main-header .navigation .nav .nav-item:hover .dropdown-menu {
             display: block; }
           #header .main-header .navigation .nav .nav-item i {
-            display: block;
+            display: none;
             text-align: center;
             margin-left: 5px; }
   #header .responsive {
@@ -502,6 +502,8 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right bottom; }
+  #main-body .content.slideshow {
+    overflow: hidden; }
   #main-body .content .content-title {
     text-align: center;
     padding-bottom: 20px; }
@@ -752,7 +754,8 @@ body {
               display: none;
               position: relative;
               background: transparent;
-              border: none; }
+              border: none;
+              top: 0; }
               #header .main-header .navigation .nav-list .nav .nav-item .dropdown-menu a {
                 padding-left: 0; }
             #header .main-header .navigation .nav-list .nav .nav-item, #header .main-header .navigation .nav-list .nav .nav-item span, #header .main-header .navigation .nav-list .nav .nav-item i {
@@ -789,8 +792,19 @@ body {
       #main-body .content .content-main img.wrap-60p, #main-body .content .content-main img.wrap-70p, #main-body .content .content-main img.wrap-80p {
         margin-right: 20%;
         margin-top: 30px; }
-      #main-body .content .content-main .dg-container .dg-wrapper a > img {
-        width: 80% !important; } }
+      #main-body .content .content-main .dg-container .dg-wrapper {
+        width: 100%; }
+        #main-body .content .content-main .dg-container .dg-wrapper a {
+          width: 100%; } }
+
+@media (max-width: 500px) {
+  #main-body .content .content-main .dg-container .dg-wrapper a {
+    -webkit-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s;
+    visibility: hidden !important;
+    transition: all 1s ease-in-out 0s; }
+    #main-body .content .content-main .dg-container .dg-wrapper a.dg-center {
+      visibility: visible !important; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   #header {
