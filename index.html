@@ -1,467 +1,678 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Blog Web of Tri Tran</title>
-    <!-- Sets initial viewport load and disables zooming  -->
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-    <!-- SmartAddon.com Verification -->
-    <meta name="smartaddon-verification" content="936e8d43184bc47ef34e25e426c508fe" />
-	<meta name="keywords" content="Flat UI Design, UI design, UI, user interface, web interface design, user interface design, Flat web design, Bootstrap, Bootflat, Flat UI colors, colors">
-	<meta name="description" content="The complete style of the Bootflat Framework.">
-    <link rel="shortcut icon" href="img/icons/icon_roc.png"/>
-    <link rel="bookmark" href="img/icons/icon_roc.png"/>
-    <!-- site css -->
-    <link rel="stylesheet" href="bootflat.github.io-master/css/site.min.css">
-    <style type="text/css">
-    	footer {
-            color: #fff;
-        }
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Bruce Tran</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
 
-        footer h3 {
-            margin-bottom: 30px;
-        }
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
 
-        footer .footer-above {
-            padding-top: 50px;
-            background-color: #2c3e50;
-        }
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
 
-        footer .footer-col {
-            margin-bottom: 50px;
-        }
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
 
-        footer .footer-below {
-            padding: 25px 0;
-            background-color: #233140;
-        }
-        
-    </style>
-    <!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css"> -->
-    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
-    <![endif]-->
-    <script type="text/javascript" src="bootflat.github.io-master/js/site.min.js"></script>
-    <script src="angular-chart.js/dist/angular-chart.js"></script>
-    <script type="text/javascript">
-    	angular.module("app", ["chart.js"]).controller("DoughnutCtrl", function ($scope) {
-		  $scope.labels = ["Download Sales", "In-Store Sales", "Mail-Order Sales"];
-		  $scope.data = [300, 500, 100];
-		});
-    </script>
-  </head>
-  <body style="background-color: #f1f2f6;">
-    <div class="docs-header">
-      <!--nav-->
-      <nav class="navbar navbar-default navbar-custom" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"><img src="img/icons/icon_roc.png" height="40"></a>
-          </div>
-          <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a class="nav-link" href="#">Profile</a></li>
-              <li><a class="nav-link" href="#timeline">Timeline</a></li>
-              <li><a class="nav-link" href="#experiences">Experiences</a></li>
-              <li><a class="nav-link" href="#soft_skill">Soft skills</a></li>
-              <li><a class="nav-link" href="#hobbies">Hobbies</a></li>
-              <li><a class="nav-link" href="game-color.html">Game Color</a></li>
-							<li><a class="nav-link" href="visausa/index.html">Visa USA</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!--header-->
-      <div class="topic">
-        <div class="container">
-			<div class="col-md-8">
-			  <h2>Tran Quang Tri</h2>
-			  <h5><i class="glyphicon glyphicon-map-marker"></i> District 10, HCMC</h5>
-			  <h5><i class="glyphicon glyphicon-envelope"></i><a href="mailto:qtkidngoc@gmail">  qtkidngoc@gmail</a></h5>
-			  <h5><i class="glyphicon glyphicon-earphone"></i> (+84) 122 9291 669</h5>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	<div id="colorlib-page">
+		<div class="container-wrap">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+			<div class="text-center">
+				<div class="author-img" style="background-image: url(images/profile.png);"></div>
+				<h1 id="colorlib-logo"><a href="index.html">Bruce Tran</a></h1>
+				<span class="position"><a href="#">Software Developer</a> in Vietnam</span>
 			</div>
-			<div class="col-md-4">
-			  <div class="capture-image">
-			  	<img src="img/photos/capture.jpg" width="250" height="auto" class="img-thumbnail">
-			  </div>
-          </div>
-        </div>
-        <div class="topic__infos">
-          <div class="container" style="color: #3399ff">
-            "Sometimes when you innovate, you make mistakes. It is best to admit them quickly, and get on with improving your other innovations."
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--documents-->
-    <div class="container documents">
-     
-	  <!--TimeLine
-      ================================================== -->
-      <div id="timeline">
-      	<h1 align="center">Timeline</h1>
-        <div class="row">
-		  <div class="col-md-12">
-			  <div class="timeline">
-				  <dl>
-					  <dt>2014 Year</dt>
-					  <dd class="pos-right clearfix">
-						  <div class="circ"></div>
-						  <div class="time">Aug 26</div>
-						  <div class="events">
-							  <div class="pull-left">
-								  <img class="events-object img-rounded" src="img/logos/geronimo_logo.png">
-							  </div>
-							  <div class="events-body">
-								  <h4 class="events-heading">Geronimo Project at KMS Technology</h4>
-								  <p>Business Analysics and Cloning Website</p>
-								  <p>Cloning website and communicating to customers. Analysis non-profit and donation business for system.</p>
-								  <p>Finish working at the end of <span style="color: #4fc1e9">May 2015</span>.</p>
-							  </div>
-						  </div>
-					  </dd>
-					  <dt>2015 Year</dt>
-					  <dd class="pos-left clearfix">
-						  <div class="circ"></div>
-						  <div class="time">Jun 1</div>
-						  <div class="events">
-							  <div class="pull-left">
-								  <img class="events-object img-rounded" src="img/logos/cce_logo.png">
-							  </div>
-							  <div class="events-body">
-								  <h4 class="events-heading">EMS Project at CCE of HCM University of Technologies</h4>
-								  <p>Java Developer</p>
-								  <p>Developing server-side of system, using Struts framework to core technology.</p>
-							  </div>
-						  </div>
-					  </dd>
-					  <dd class="pos-right clearfix">
-						  <div class="circ"></div>
-						  <div class="time">Oct 1</div>
-						  <div class="events">
-							  <div class="pull-left">
-								  <img class="events-object img-rounded" src="img/logos/android_logo.png">
-							  </div>
-							  <div class="events-body">
-								  <h4 class="events-heading">Internship of Sofware Engineering at School</h4>
-								  <p>Team leader and coder (5-persons group)</p>
-								  <p>Building Schedule Management of Student application. Apps can be used to manage studing's schedule and create private timeline for them. Apps was completed to version demo.</p>
-							  </div>
-						  </div>
-					  </dd>
-					  <dd class="pos-left clearfix">
-						  <div class="circ"></div>
-						  <div class="time">Dec 5</div>
-						  <div class="events">
-							  <div class="pull-left">
-								  <img class="events-object img-rounded" src="img/logos/vl_logo.png">
-							  </div>
-							  <div class="events-body">
-								  <h4 class="events-heading">VLU-EMS Project at CCE</h4>
-								  <p>Java Developer and DBS</p>
-								  <p>Developing similar system EMS for Vinh Long University of Technology and Education.</p>
-								  <p>Build database system for project.</p>
-							  </div>
-						  </div>
-					  </dd>
-					  <dt>2016 Year</dt>
-					  <dd class="pos-right clearfix">
-						  <div class="circ"></div>
-						  <div class="time">Feb 15</div>
-						  <div class="events">
-							  <div class="pull-left">
-								  <img class="events-object img-rounded" src="img/logos/nlp_logo.png">
-							  </div>
-							  <div class="events-body">
-								  <h4 class="events-heading">Detecting Opinion Project</h4>
-								  <p>Java Developer and Researching about NLP</p>
-								  <p>Deverloping Detecting opinions of customers for product's features Model to Real System. Project has finished version demo. It executed detecting process by enable data (normally data).</p>
-								  <p>Project is still researching and deveping more features like as pre-processing input data, resolving for detecting product's features...</p>
-							  </div>
-						  </div>
-					  </dd>
-					  <dd class="pos-left clearfix">
-						  <div class="circ"></div>
-						  <div class="time">Mar 8</div>
-						  <div class="events">
-							  <div class="pull-left">
-								  <img class="events-object img-rounded" src="img/logos/cdio_logo.png">
-							  </div>
-							  <div class="events-body">
-								  <h4 class="events-heading">CDIO Project at CCE</h4>
-								  <p>Java Developer</p>
-								  <p>Deverloping server-side of system project</p>
-								  <p>Finished working at CCE in <span style="color: #4fc1e9">May 31</span></p>
-							  </div>
-						  </div>
-					  </dd>
+			<nav id="colorlib-main-menu" role="navigation" class="navbar">
+				<div id="navbar" class="collapse">
+					<ul>
+						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
+						<li><a href="#" data-nav-section="about">About</a></li>
+						<li><a href="#" data-nav-section="services">Services</a></li>
+						<li><a href="#" data-nav-section="skills">Skills</a></li>
+						<li><a href="#" data-nav-section="education">Education</a></li>
+						<li><a href="#" data-nav-section="experience">Experience</a></li>
+						<li><a href="#" data-nav-section="work">Work</a></li>
+						<li><a href="#" data-nav-section="blog">Blog</a></li>
+						<li><a href="#" data-nav-section="contact">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
 
-				  </dl>
-			  </div>
-		  </div>
-		</div>
-		<div class="row"></br></br></br></br></div>
-      </div>
-	 
-      <!-- Footer
-      ================================================== -->
-      <div id="experiences">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="footer">
-              <div class="container">
-                <div class="clearfix">
-                  <div class="footer-logo">
-                  	<a href="#"><img src="bootflat.github.io-master/img/footer-logo.png" />EXPERIENCES</a>
-                  </div>
-                  <dl class="footer-nav">
-                    <dt class="nav-title">Programming</dt>
-                    <dd class="nav-item"><a href="#">OOP +1exp</a></dd>
-                    <dd>
-                    	<div class="progress progress-striped active">
-		                	<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">80%</div>
-		                </div>
-                    </dd>
-                    <dd class="nav-item"><a href="#">Android 3 months</a></dd>
-                    <dd>
-                    	<div class="progress progress-striped active">
-		                	<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">60%</div>
-		                </div>
-                    </dd>
-                    <dd class="nav-item"><a href="#">Java +1exp</a></dd>
-                    <dd>
-                    	<div class="progress progress-striped active">
-		                	<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">90%</div>
-		                </div>
-                    </dd>
-                    <dd class="nav-item"><a href="#">C/C++</a></dd>
-                    <dd>
-                    	<div class="progress progress-striped active">
-		                	<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">50%</div>
-		                </div>
-                    </dd>
-                    <dd class="nav-item"><a href="#">Javascript +1exp</a></dd>
-                    <dd>
-                    	<div class="progress progress-striped active">
-		                	<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">75%</div>
-		                </div>
-                    </dd>
-                  </dl>
-                  <dl class="footer-nav">
-                  	<dt class="nav-title">Java framework</dt>
-                    <dd class="nav-item"><a href="#">Spring 8 months</a></dd>
-                    <dd>
-                    	<div class="progress progress-striped active">
-		                	<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
-		                  	</div>
-                    </dd>
-                    <dd class="nav-item"><a href="#">Struts 1 exp</a></dd>
-                    <dd>
-                    	<div class="progress progress-striped active">
-		                	<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
-		                  	</div>
-                    </dd>
-                    <dd class="nav-item"><a href="#">Hibernate 1exp</a></dd>
-                    <dd>
-                    	<div class="progress progress-striped active">
-		                	<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
-		                  	</div>
-                    </dd>
-                    <dd class="nav-item"><a href="#">JSP/Servlet 5 months</a></dd>
-                    <dd>
-                    	<div class="progress progress-striped active">
-		                	<div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%">35%</div>
-		                  	</div>
-                    </dd>
-                    <dd class="nav-item"><a href="#">NLP Libraries 4 months</a></dd>
-                    <dd>
-                    	<div class="progress progress-striped active">
-		                	<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
-		                  	</div>
-                    </dd>
-                  </dl>
-                  <dl class="footer-nav">
-                    <dt class="nav-title">Design</dt>
-                    <dd class="nav-item"><a href="#">MVC Pattern 10 months</a></dd>
-                    <dd>
-                    	<div class="progress progress-striped active">
-		                	<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
-		                 </div>
-                    </dd>
-                    <dd class="nav-item"><a href="#">Adapter Pattern 3 months</a></dd>
-                    <dd>
-                    	<div class="progress progress-striped active">
-		                	<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
-		                 </div>
-                    </dd>
-                    <dd class="nav-item"><a href="#">Front-end web 10 months</a></dd>
-                    <dd>
-                    	<div class="progress progress-striped active">
-		                	<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
-		                 </div>
-                    </dd>
-                    <dd class="nav-item"><a href="#">UI/UX 3 months</a></dd>
-                    <dd>
-                    	<div class="progress progress-striped active">
-		                	<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 15%"></div>
-		                 </div>
-                    </dd>
-                  </dl>
-                  <dl class="footer-nav">
-                    <dt class="nav-title">Database</dt>
-                    <dd class="nav-item"><a href="#">MySQL 1exp</a></dd>
-                    <dd>
-                    	<div class="progress progress-striped active">
-		                	<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
-		                 </div>
-                    </dd>
-                    <dd class="nav-item"><a href="#">SQL Server 6 months</a></dd>
-                    <dd>
-                    	<div class="progress progress-striped active">
-		                	<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
-		                 </div>
-                    </dd>
-                    <dd class="nav-item"><a href="#">Oracle 5 months</a></dd>
-                    <dd>
-                    	<div class="progress progress-striped active">
-		                	<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
-		                 </div>
-                    </dd>
-                    <dd class="nav-item"><a href="#">SQLite 5 months</a></dd>
-                    <dd>
-                    	<div class="progress progress-striped active">
-		                	<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
-		                 </div>
-                    </dd>
-                  </dl>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    <div id="soft_skill">
-        <div class="col-md-3">
-    		<h4 class="example-title">SOFT SKILLS</h4>
-    	</div>
-        	
-        	<div class="jumbotron">
-              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                <div class="col-md-8" style="margin-left: 16%; margin-right: 16%">
-                	<ol class="carousel-indicators">
-	                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-	                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-	                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-	                </ol>
-	                <div class="carousel-inner">
-	                  <div class="item active"><img src="img/photos/teamwork.png"></div>
-	                  <div class="item"><img src="img/photos/communication.png"></div>
-	                  <div class="item"><img src="img/photos/research.png"></div>
-	                </div>
-	                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-	                  <span class="glyphicon glyphicon-chevron-left"></span>
-	                </a>
-	                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-	                  <span class="glyphicon glyphicon-chevron-right"></span>
-	                </a>
-                </div>
-              </div>
-              <div class="jumbotron-contents">
-              	<div class="row">
-              		<div class="col-md-4">
-              			<h4>Teamwork and collaboration</h4>
-                		<p>Always being enable to collaborate and supporting what can I do</p>
-              		</div>
-              		<div class="col-md-4">
-              			<h4>Communication skill</h4>
-                		<p>Ability to communicate to customers and foreign too. English skill can be useful for reading and researching documents</p>
-              		</div>
-              		<div class="col-md-4">
-              			<h4>Researching and sharing</h4>
-                		<p>Always researching and changing myself. I am so happy if I can share to colleague anything what I known</p>
-              		</div>
-              	</div>    
-              </div>
-            </div>
-    </div>
+			<div class="colorlib-footer">
+				<p><small>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script></small></p>
+				<ul>
+					<li><a href="#"><i class="icon-facebook2"></i></a></li>
+					<li><a href="#"><i class="icon-twitter2"></i></a></li>
+					<li><a href="#"><i class="icon-instagram"></i></a></li>
+					<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+				</ul>
+			</div>
 
-    <!--hobbies-->
-    <div id="hobbies" class="site-footer" style="background-image: url('bootflat.github.io-master/img/travel_background.jpg')">
-      <div class="container" >
-        <div class="download">
-          <span><font size="5%"><b>HOBBIES</b></font></span>
-        </div>
-        
-          <div class="col-md-4">
-            <h3>Music and singing</h3>
-            <p>I always be attracted and can sing all day. I like POP and R&B songs because they make me so happy. I think that everyone also has this hobbies like me.</p>
-          </div>
-          <div class="col-md-4">
-            <h3>Traveling and new journeys</h3>
-            <p>Run, run and run. If you wanna expand your knowledges, let you run and experience other places. It's really very interesting!</p>
-          </div>
-          <div class="col-md-4">
-            <h3>Kitchen and cooking</h3>
-            <p>I like anything which is the food, but am not a cook. Just be simple that I can search and make something myself. And I am so happy for it.</p>
-          </div>
-        
-       		<div class="row">
-	          <div class="col-md-6">
-	            <h3>OUTDOOR ACTIVITIES</h3>
-	          </div>
-          	</div>
-          	<div class="row container">
-          		<div class="col-sm-6 col-md-4" style="margin-left: -1%">
-	              <div>
-	                <img class="img-rounded img-thumbnail" src="img/photos/pingpong.png" >
-	                <div class="caption" style="margin-left: 20%; margin-right: 20%">
-	                  <h3>Ping pong sport</h3>
-	                </div>
-	              </div>
-	            </div>
-	            <div class="col-sm-6 col-md-4" >
-	              <div>
-	                <img class="img-rounded img-thumbnail" src="img/photos/picnic.png" >
-	                <div class="caption" style="margin-left: 20%; margin-right: 20%">
-	                  <h3>Picnic</h3>
-	                </div>
-	              </div>
-	            </div>
-	            <div class="col-sm-6 col-md-4">
-	              <div>
-	                <img class="img-rounded img-thumbnail" src="img/photos/donation.png" >
-	                <div class="caption" style="margin-left: 20%; margin-right: 20%">
-	                  <h3>Donation</h3>
-	                </div>
-	              </div>
-	            </div>
-          	</div>
-        </div>
-        
-      </div>
-    <!-- footer -->
-    <footer class="text-center">
-	    <div class="footer-above">
-	        <div class="row">
-	            <div class="footer-col col-md-4"></div>
-	            <div class="footer-col col-md-4">
-	                <a href="https://www.facebook.com/chang.bom.5"><img src="img/icons/icon_FB.png" height="15%" width="15%"></a>
-				    <a href="https://twitter.com/kidngoc"><img src="img/icons/icon_TW.png" height="15%" width="15%" style="border-radius: 2em; border: 0.01em solid #929ba3"></a>
-				    <a href="https://plus.google.com/u/0/114133881774335244766/posts"><img src="img/icons/icon_GG.png" height="15%" width="15%"></a>  
-	            </div>
-	            <div class="footer-col col-md-4"></div>
-	        </div>
-	    </div>
-	</footer>
-  </body>
+		</aside>
+
+		<div id="colorlib-main">
+			<section id="colorlib-hero" class="js-fullheight" data-section="home">
+				<div class="flexslider js-fullheight">
+					<ul class="slides">
+				   	<li style="background-image: url(images/img_bg_1.jpg);">
+				   		<div class="overlay"></div>
+				   		<div class="container-fluid">
+				   			<div class="row">
+					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+					   				<div class="slider-text-inner js-fullheight">
+					   					<div class="desc">
+						   					<h1>Hi! <br>Bruce Tran</h1>
+						   					<h2>You're welcome in my site <a href="http://triqtran.github.io">triqtran.github.io</a></h2>
+												<p><a class="btn btn-primary btn-learn">My Résume <i class="icon-download4"></i></a></p>
+											</div>
+					   				</div>
+					   			</div>
+					   		</div>
+				   		</div>
+				   	</li>
+				   	<li style="background-image: url(images/img_bg_2.jpg);">
+				   		<div class="overlay"></div>
+				   		<div class="container-fluid">
+				   			<div class="row">
+					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+					   				<div class="slider-text-inner">
+					   					<div class="desc">
+						   					<h1>I am <br>a Software Developer</h1>
+												<h2>With over 3-years experiences in Software Development</p>
+											</div>
+					   				</div>
+					   			</div>
+					   		</div>
+				   		</div>
+				   	</li>
+				  	</ul>
+			  	</div>
+			</section>
+
+			<section class="colorlib-about" data-section="about">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="col-md-12">
+									<div class="about-desc">
+										<span class="heading-meta">About Us</span>
+										<h2 class="colorlib-heading">Who Am I?</h2>
+										<p><strong>Hi I'm Bruce Tran.</strong> I have worked as a Developer since 2014 when I was a fresher.  From being a Business Analyst to Developer, I had some both opportunities and challenges to grow up myself.</p>
+										<p>These projects are in many different fields like as E-Learning, Non-profit organizations, Job Seeking Network Social, Music Entertainment, Game…So, it seems lucky for me to approach to a variety of business majors.</p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
+									<div class="services color-1">
+										<span class="icon2"><i class="icon-bulb"></i></span>
+										<h3>Business </br>Analyst</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+									<div class="services color-2">
+										<span class="icon2"><i class="icon-phone3"></i></span>
+										<h3>Frontend Development</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
+									<div class="services color-3">
+										<span class="icon2"><i class="icon-globe-outline"></i></span>
+										<h3>Backend Development</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
+									<div class="services color-4">
+										<span class="icon2"><i class="icon-data"></i></span>
+										<h3>Database System</h3>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+									<div class="hire">
+										<h2>This is my pleasure to tell you that <br>all mentioned projects were considered well!</h2>
+										<a href="#" class="btn-hire">My Résume </a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			
+			<section class="colorlib-services" data-section="services">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">What I do?</span>
+							<h2 class="colorlib-heading">Here are some of my expertise</h2>
+						</div>
+					</div>
+					<div class="row row-pt-md">
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-1">
+								<span class="icon">
+									<i class="icon-bulb"></i>
+								</span>
+								<div class="desc">
+									<h3>Consultant</h3>
+									<p>Advise solution and resolve issues of project</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-2">
+								<span class="icon">
+									<i class="icon-data"></i>
+								</span>
+								<div class="desc">
+									<h3>Database</h3>
+									<p>Design and build database system</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-3">
+								<span class="icon">
+									<i class="icon-phone3"></i>
+								</span>
+								<div class="desc">
+									<h3>Web Application</h3>
+									<p>Build and deployment web application</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-4">
+								<span class="icon">
+									<i class="icon-layers2"></i>
+								</span>
+								<div class="desc">
+									<h3>Web Design</h3>
+									<p>Convert template following graphic design</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-5">
+								<span class="icon">
+									<i class="icon-data"></i>
+								</span>
+								<div class="desc">
+									<h3>System</h3>
+									<p>Configure production enviroment for application</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-6">
+								<span class="icon">
+									<i class="icon-phone3"></i>
+								</span>
+								<div class="desc">
+									<h3>Plugins</h3>
+									<p>Provide plugin services for solving customer's demand</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
+				<div class="overlay"></div>
+				<div class="colorlib-narrow-content">
+					<div class="row">
+					</div>
+					<div class="row">
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="365" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Cups of coffee</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="6" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Projects</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="4" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Clients</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="3" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Partners</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="colorlib-skills" data-section="skills">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">My Specialty</span>
+							<h2 class="colorlib-heading animate-box">My Skills</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+							<p>Strength: having over 3-year experience in Java Developer and 1 year in Javascript. Futhermore,the most recent project which I joined as a Front-end Developer brought me lots of ability to design and develop web client.</p>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>Java Core</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="100"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:100%">
+								    <span>100%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>Spring (Core / MVC / Data / Boot)</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="75"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:75%">
+								    <span>75%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>ORM (JDBC / Hibernate / JPA2)</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="85"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
+								    <span>85%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>NodeJS - ExpressJS</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="90"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
+								    <span>90%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>HTML5/CSS3</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="70"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
+								    <span>70%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>Javascript (pure JS, JQuery)</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
+								    <span>80%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>ReactJS / Redux - MobX - Context API</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-7" role="progressbar" aria-valuenow="90"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
+								    <span>90%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>Webpack - Gulp</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="50"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:50%">
+								    <span>50%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>Golang</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="50"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:50%">
+								    <span>50%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>C/C++</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
+								    <span>80%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="colorlib-education" data-section="education">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Education</span>
+							<h2 class="colorlib-heading animate-box">Education</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+							<div class="fancy-collapse-panel">
+								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingOne">
+									        <h4 class="panel-title">
+									            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Software Engineer Degree
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+												<div class="panel-body">
+													<div class="row">
+														<div class="col-md-6">
+															<p><strong>2012 - 2017</strong></p>
+														</div>
+														<div class="col-md-6">
+															<p>Bach Khoa University at HCM City</p>
+														</div>
+													</div>
+													<p>My main major is Computer Science and I must pass all challenges during 5 years. Then, I completed the course successfully by a good thesis about NLP - field of AI Technology</p>
+												</div>
+									    </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="colorlib-experience" data-section="experience">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Experience</span>
+							<h2 class="colorlib-heading animate-box">Work Experience</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+				         <div class="timeline-centered">
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+
+					               <div class="timeline-icon color-1">
+					                  <i class="icon-pen2"></i>
+					               </div>
+
+					               <div class="timeline-label">
+					                  <h2><a href="#">Full-stack Web Developer at TPP Technology</a> <span>2018 - NOW</span></h2>
+					                  <p>Joined some project which was build from scratch or refactor all again. So, that is lucky to me when participating as Real Engineer and it's sometimes a Solution Architect.</p>
+					               </div>
+					            </div>
+					         </article>
+
+
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-2">
+					                  <i class="icon-pen2"></i>
+					               </div>
+					               <div class="timeline-label">
+					               	<h2><a href="#">Software Developer at Zalo Group</a> <span>2017-2018</span></h2>
+					                  <p>I was invited to maintain and develop eco-system of Zing's products. That is the reason why it makes me overview all components of big system production from database, system-networking to middleware back-end services and client side (web / mobile / others)</p>
+					               </div>
+					            </div>
+									 </article>
+									 
+									 <article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
+										<div class="timeline-entry-inner">
+											 <div class="timeline-icon color-4">
+													<i class="icon-pen2"></i>
+											 </div>
+											 <div class="timeline-label">
+												 <h2><a href="#">Degree Enigeer with Computer Science Major</a> <span>2016-2017</span></h2>
+													<p>My research is about Natural Language Processing - which is a field of AI Technology. It took me nearly 1 year to finalize the thesis.</p>
+											 </div>
+										</div>
+								 	 </article>
+
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-3">
+					                  <i class="icon-pen2"></i>
+					               </div>
+					               <div class="timeline-label">
+					               	<h2><a href="#">Junior Java Developer</a> <span>2015-2017</span></h2>
+					                  <p>This was the time I became a developer when looking for the first project to me. I joined in developing E-Learning System of Bach Khoa University and maintaining all of API-services for mobile application. They were built on JavaEE Platform</p>
+					               </div>
+					            </div>
+					         </article>
+
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-5">
+					                  <i class="icon-pen2"></i>
+					               </div>
+					               <div class="timeline-label">
+					               	<h2><a href="#">Business Analyst at KMS Technology</a> <span>2014-2015</span></h2>
+					                  <p>As the real BA position, I learned how to understand, analysize and suggest solution based on customer's requirements</p>
+					               </div>
+					            </div>
+					         </article>
+
+					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-none">
+					               </div>
+					            </div>
+					         </article>
+					      </div>
+					   </div>
+				   </div>
+				</div>
+			</section>
+
+			<section class="colorlib-work" data-section="work">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">My Work</span>
+							<h2 class="colorlib-heading animate-box">Recent Work</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="project" style="background-image: url(images/geronimo.png);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="http://geronimo.com/" target="_blank">Geronimo Production</a></h3>
+										<a href="http://geronimo.com/" target="_blank"><span>Website</span></a>
+										<p class="icon">
+											<span><a href="http://geronimo.com/" target="_blank"><i class="icon-share3"></i></a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="project" style="background-image: url(images/e-learning.png);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="http://www.aao.hcmut.edu.vn/" target="_blank">E-Learning of University</a></h3>
+										<a href="http://www.aao.hcmut.edu.vn/" target="_blank"><span>Website</span></a>
+										<p class="icon">
+											<span><a href="http://www.aao.hcmut.edu.vn/" target="_blank"><i class="icon-share3"></i></a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
+							<div class="project" style="background-image: url(images/talentora.png);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="http://www.talentora.co/" target="_blank">Talentora</a></h3>
+										<a href="http://www.talentora.co/" target="_blank"><span>Job Seeking on Social Network Mobile Application</span></a>
+										<p class="icon">
+											<span><a href="http://www.talentora.co/" target="_blank"><i class="icon-share3"></i></a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
+							<div class="project" style="background-image: url(images/zingmp3.png);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="https://zingmp3.vn/" target="_blank">ZingMP3 Music</a></h3>
+										<a href="https://zingmp3.vn/" target="_blank"><span>Music Entertainment Online</span></a>
+										<p class="icon">
+											<span><a href="https://zingmp3.vn/" target="_blank"><i class="icon-share3"></i></a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="colorlib-contact" data-section="contact">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Get in Touch</span>
+							<h2 class="colorlib-heading">Contact</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-5">
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="icon-globe-outline"></i>
+								</div>
+								<div class="colorlib-text">
+									<p><a href="#">triqutran@gmail.com</a></p>
+								</div>
+							</div>
+
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="icon-map"></i>
+								</div>
+								<div class="colorlib-text">
+									<p>302 Le Van Si, W.1, Tan Binh District, HCMC, Vietnam</p>
+								</div>
+							</div>
+
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="icon-phone"></i>
+								</div>
+								<div class="colorlib-text">
+									<p><a href="tel://">+84 77 9291 669</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-7 col-md-push-1">
+							<div class="row">
+								<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
+									<div class="mapouter"><div class="gmap_canvas"><iframe width="400" height="370" id="gmap_canvas" src="https://maps.google.com/maps?q=302%20L%C3%AA%20V%C4%83n%20S%E1%BB%B9%2C%20Ph%C6%B0%E1%BB%9Dng%201%2C%20Qu%E1%BA%ADn%20T%C3%A2n%20B%C3%ACnh%2C%20Ph%C6%B0%E1%BB%9Dng%201%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de"></a></div><style>.mapouter{text-align:right;height:370px;width:400px;}.gmap_canvas {overflow:hidden;background:none!important;height:370px;width:400px;}</style>Google Maps by <a href="https://www.embedgooglemap.net" rel="nofollow" target="_blank">Embedgooglemap.net</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div><!-- end:colorlib-main -->
+	</div><!-- end:container-wrap -->
+	</div><!-- end:colorlib-page -->
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+	</body>
 </html>
+
