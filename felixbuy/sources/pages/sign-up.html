@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felix Buy</title>
+  <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../assets/css/bundle.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="header-outside">
+      <div class="logo">
+        <img src="../../assets/images/logo-felix-buy.png" />
+      </div>
+      <div class="more">
+        <p class="text-n14">Bạn chưa có tài khoản?&nbsp;<a class="refer" href="./sign-in.html">Đăng nhập</a></p>
+      </div>
+    </div>
+  </header>
+  <div class="page-layout signin">
+    <div class="row">
+      <div class="col-sm-4 signin-left">
+        <p class="introduction text-b24 text-red-darker">Ứng dụng mua hàng tại Mỹ nhanh chóng, an toàn, tiện lợi</p>
+        <img class="signin-background" src="../../assets/images/background-signin.png" />
+      </div>
+      <div class="col-sm-8 signin-right">
+        <div class="container">
+          <div class="form-group form form-center">
+            <p class="form-part text-b36 text-black">Đăng ký tài khoản FelixBuy</p>
+            <p class="form-part text-b14 text-black-lighter-1">Đăng ký / Đăng nhập nhanh bằng</p>
+            <div class="form-part row">
+              <div class="col">
+                <button class="btn btn-transparent">
+                  <img src="../../assets/images/logo-google-plus.png" />
+                  <p class="text-n14">Google</p>
+                </button>
+              </div>
+              <div class="col">
+                <button class="btn btn-transparent">
+                  <img src="../../assets/images/logo-facebook.png" />
+                  <p class="text-n14">Facebook</p>
+                </button>
+              </div>
+            </div>
+            <div class="form-part row">
+              <div class="dash-line">
+                <div class="line"></div>
+                <div class="label">
+                  <p class="text-b14 text-black-lighter-1">hoặc</p>
+                </div>
+              </div>
+            </div>
+            <div class="form-part row">
+              <div class="input-group mb-3">
+                <span class="input-group-text icons icons-user"></span>
+                <input type="text" class="form-control" placeholder="Vui lòng nhập họ và tên đầy đủ" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text icons icons-mobile"></span>
+                <input type="text" class="form-control" placeholder="Nhập số điện thoại của bạn" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text icons icons-email"></span>
+                <input type="text" class="form-control" placeholder="Nhập email của bạn" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text icons icons-lock"></span>
+                <input type="password" class="form-control" placeholder="Nhập mật khẩu" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text icons icons-enter"></span>
+                <input type="password" class="form-control" placeholder="Nhập lại mật khẩu" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+            </div>
+            <div class="form-part row">
+              <div class="checkbox checkbox-red">
+                <input id="checkbox6" type="checkbox" >
+                <label class="text-n14 text-black-lighter-1" for="checkbox6">
+                  Tôi đồng ý với <a class="text-blue" href="#" data-toggle="modal" data-target="#exampleModal">Điều khoản và điều kiện</a> của FelixBuy
+                </label>
+              </div>
+            </div>
+            <div class="form-part row">
+              <a class="btn btn-red" href="./home-request-price-empty.html">
+                <p class="text-n14">Đăng kí</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal popup -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content modal-view">
+        <div class="modal-header">
+          <p class="modal-title text-b18 text-black">Điều khoản và Điều kiện của Felixbuy</p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="text-n12 text-black-lighter-1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p class="text-n12 text-black-lighter-1">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+          </p>
+          <p class="text-n12 text-black-lighter-1">
+            But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-red" data-dismiss="modal"><p class="text-n14">Tôi đã hiểu và đồng ý</p></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End modal popup -->
+  <script src="../../assets/js/bootstrap.min.js"></script>
+  <script src="../../assets/js/bundle.js"></script>
+</body>
+</html>
