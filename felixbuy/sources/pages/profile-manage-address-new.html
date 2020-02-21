@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felix Buy</title>
+  <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=vietnamese" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../assets/css/bundle.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+</head>
+<body class="logined">
+  <header>
+    <div class="header-logined">
+      <div class="logo">
+        <img src="../../assets/images/logo-felix-buy-clean.png" />
+      </div>
+      <div class="header-navigation">
+        <div class="navigation">
+          <a class="navigation-item" href="./home-request-price.html">
+            <span class="icons icons-ordering"></span>
+            <p class="text-b14 text-black-lighter-2">Yêu cầu báo giá</p>
+            <span class="line"></span>
+          </a>
+          <a class="navigation-item" href="./home-manage-ordering.html">
+            <div class="icons icons-caring"></div>
+            <p class="text-b14 text-black-lighter-2">Quản lý đơn hàng</p>
+            <div class="line"></div>
+          </a>
+          <a class="navigation-item" href="./home-support.html">
+            <div class="icons icons-support"></div>
+            <p class="text-b14 text-black-lighter-2">Trợ giúp</p>
+            <div class="line"></div>
+          </a>
+        </div>
+      </div>
+      <div class="header-profile">
+        <div class="profile">
+          <div class="profile-show dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="infor">
+              <p class="text-n14 text-black-lighter-2">Xin chào,</p>
+              <p class="text-b14 text-black">Võ Đăng Khoa</p>
+            </div>
+            <div class="avatar">
+              <!-- <img src="../../assets/images/default-avatar.png" /> -->
+              <span class="icons icons-profile icons-red"></span>
+            </div>
+            <span class="ic-dropdown icons icons-arrows-down icons-black-lighter-1"></span>
+          </div>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="./profile-personalization.html">
+              <span class="icons icons-profile icons-black-darker-2"></span>
+              <span class="text-n14 text-black">Thông tin cá nhân</span>
+            </a>
+            <a class="dropdown-item" href="./profile-change-password.html">
+              <span class="icons icons-key icons-black-darker-2"></span>
+              <span class="text-n14 text-black">Đổi mật khẩu</span>
+            </a>
+            <a class="dropdown-item" href="./profile-manage-address-list.html">
+              <span class="icons icons-address icons-black-darker-2"></span>
+              <span class="text-n14 text-black">Quản lý địa chỉ</span>
+            </a>
+            <a class="dropdown-item text" href="./sign-in.html">
+              <span class="icons icons-shutdown icons-red"></span>
+              <span class="text-n14 text-red">Thoát</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="content">
+    <div class="profile-page">
+      <aside class="profile-aside aside-dashboard">
+        <div class="dashboard list-group">
+          <a href="./profile-personalization.html" class="list-group-item">
+            <span class="item-label">
+              <span class="icons icons-user-o"></span>Thông tin cá nhân
+            </span>
+            <span class="icons icons-arrows-right"></span>
+          </a>
+          <a href="./profile-change-password.html" class="list-group-item">
+            <span class="item-label">
+              <span class="icons icons-key-o"></span>Đổi mật khẩu
+            </span>
+            <span class="icons icons-arrows-right"></span>
+          </a>
+          <a href="./profile-manage-address-list-emtpy.html" class="list-group-item active">
+            <span class="item-label">
+              <span class="icons icons-address-o"></span>Quản lý địa chỉ
+            </span>
+            <span class="icons icons-arrows-right"></span>
+          </a>
+        </div>
+      </aside>
+      <aside class="profile-aside aside-content">
+        <div class="container-fluid">
+          <div class="forming">
+            <div class="forming-header">
+              <p class="text-b18 text-black">Tạo địa chỉ mới</p>
+              <p class="text-n14 text-black-lighter-2">Vui lòng nhập đầy thông tin</p>
+            </div>
+            <form class="forming-body">
+              <div class="form-group row">
+                <div class="input-view">
+                  <label for="ipass" class="col-sm-2 col-form-label">
+                    <p class="float-right">Họ Tên<span class="dot">*</span></p>
+                  </label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="ipass" placeholder="Vui lòng nhập chính xác">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="input-view">
+                  <label for="ipass2" class="col-sm-2 col-form-label">
+                    <p class="float-right">Điện thoại<span class="dot">*</span></p>
+                  </label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="ipass2" placeholder="Vui lòng nhập chính xác">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="input-view">
+                  <label class="col-sm-2 col-form-label">
+                    <p class="float-right">Tỉnh / Thành phố<span class="dot">*</span></p>
+                  </label>
+                  <div class="col-sm-10">
+                    <select class="custom-select" data-placeholder="Vui lòng chọn Tỉnh / Thành phố">
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="input-view">
+                  <label class="col-sm-2 col-form-label">
+                    <p class="float-right">Quận / Huyện<span class="dot">*</span></p>
+                  </label>
+                  <div class="col-sm-10">
+                    <select class="custom-select" data-placeholder="Vui lòng chọn Quận / Huyện">
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="input-view">
+                  <label class="col-sm-2 col-form-label">
+                    <p class="float-right">Phường / Xã<span class="dot">*</span></p>
+                  </label>
+                  <div class="col-sm-10">
+                    <select class="custom-select" data-placeholder="Vui lòng chọn Phường / Xã">
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="input-view">
+                  <label class="col-sm-2 col-form-label" for="textarea1">
+                    <p class="float-right">Địa chỉ cụ thể<span class="dot">*</span></p>
+                  </label>
+                  <div class="col-sm-10">
+                    <textarea class="form-control" id="textarea1" rows="5"></textarea>
+                    <div class="invalid-feedback">Vui lòng chọn điền địa chỉ cụ thể</div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="input-view radio-group">
+                  <label class="col-sm-2 col-form-label">
+                    <p class="float-right">Địa chỉ mặc định<span class="dot">*</span></p>
+                  </label>
+                  <div class="col-sm-10 radio-items-group">
+                    <div class="radio radio-red">
+                      <input type="radio" name="radio2" id="radio4" value="option2" checked />
+                      <label class="text-n14 text-black-lighter-1" for="radio4">Có</label>
+                    </div>
+                    <div class="radio radio-red">
+                      <input type="radio" name="radio2" id="radio3" value="option1" />
+                      <label class="text-n14 text-black-lighter-1" for="radio3">Không</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-2 col-form-label offset-sm-2">
+                  <a class="btn btn-red" href="./profile-manage-address-list.html"><p class="text-n14">Lưu</p></a>
+                </div>
+                <div class="col-sm-2 col-form-label">
+                  <button class="btn"><p class="text-n14">Huỷ</p></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <script src="../../assets/js/bootstrap.min.js"></script>
+  <script src="../../assets/js/bundle.js"></script>
+</body>
+</html>
