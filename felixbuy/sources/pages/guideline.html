@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felix Buy</title>
+  <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=vietnamese" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/a11y-dark.min.css">
+  <link rel="stylesheet" href="../../assets/css/bundle.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+</head>
+<body class="logined">
+  <header>
+    <div class="header-logined">
+      <a class="logo" href="./home-request-price-empty.html">
+        <img src="../../assets/images/logo-felix-buy-clean.png" />
+      </a>
+      <div class="header-navigation">
+        <div class="navigation">
+          <a class="navigation-item active" href="./home-request-price.html">
+            <p class="text-b18 text-black-lighter-2">Hướng dẫn sử dụng</p>
+            <span class="line"></span>
+          </a>
+        </div>
+      </div>
+      <div class="header-profile">
+        <div class="profile">
+          <div class="profile-show dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="infor">
+              <p class="text-n14 text-black-lighter-2">Xin chào,</p>
+              <p class="text-b14 text-black">Võ Đăng Khoa</p>
+            </div>
+            <div class="avatar">
+              <img src="../../assets/images/default-avatar.png" />
+              <!-- <span class="icons icons-profile icons-red"></span> -->
+            </div>
+            <span class="ic-dropdown icons icons-arrows-down icons-black-lighter-1"></span>
+          </div>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="./profile-personalization.html">
+              <span class="icons icons-profile icons-black-darker-2"></span>
+              <span class="text-n14 text-black">Thông tin cá nhân</span>
+            </a>
+            <a class="dropdown-item" href="./profile-change-password.html">
+              <span class="icons icons-key icons-black-darker-2"></span>
+              <span class="text-n14 text-black">Đổi mật khẩu</span>
+            </a>
+            <a class="dropdown-item" href="./profile-manage-address-list.html">
+              <span class="icons icons-address icons-black-darker-2"></span>
+              <span class="text-n14 text-black">Quản lý địa chỉ</span>
+            </a>
+            <a class="dropdown-item text" href="./sign-in.html">
+              <span class="icons icons-shutdown icons-red"></span>
+              <span class="text-n14 text-red">Thoát</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="content">
+    <div class="profile-page">
+      <aside class="profile-aside aside-dashboard">
+        <div class="dashboard list-group">
+          <a href="#pLayout" class="list-group-item active">
+            <span class="item-label" for="pLayout">Layout</span>
+            <span class="icons icons-arrows-right"></span>
+          </a>
+          <a href="#pHeader" class="list-group-item">
+            <span class="item-label">Header</span>
+            <span class="icons icons-arrows-right"></span>
+          </a>
+          <a href="#pText" class="list-group-item">
+            <span class="item-label">Text, Typographies & Colors stylist</span>
+            <span class="icons icons-arrows-right"></span>
+          </a>
+          <a href="#pIcons" class="list-group-item">
+            <span class="item-label">Icons</span>
+            <span class="icons icons-arrows-right"></span>
+          </a>
+          <a href="#pAccordion" class="list-group-item">
+            <span class="item-label">Accordion</span>
+            <span class="icons icons-arrows-right"></span>
+          </a>
+          <a href="#pAddress" class="list-group-item">
+            <span class="item-label">Address View</span>
+            <span class="icons icons-arrows-right"></span>
+          </a>
+          <a href="#pButton" class="list-group-item">
+            <span class="item-label">Button</span>
+            <span class="icons icons-arrows-right"></span>
+          </a>
+          <a href="#pChecked" class="list-group-item">
+            <span class="item-label">Checkbox & Radio button</span>
+            <span class="icons icons-arrows-right"></span>
+          </a>
+          <a href="#pDashboard" class="list-group-item">
+            <span class="item-label">Dashboard</span>
+            <span class="icons icons-arrows-right"></span>
+          </a>
+          <a href="#pDashline" class="list-group-item">
+            <span class="item-label">Dash line</span>
+            <span class="icons icons-arrows-right"></span>
+          </a>
+          <a href="#pDatepicker" class="list-group-item">
+            <span class="item-label">Date picker</span>
+            <span class="icons icons-arrows-right"></span>
+          </a>
+          <a href="#pInput" class="list-group-item">
+            <span class="item-label">Input & Input clean</span>
+            <span class="icons icons-arrows-right"></span>
+          </a>
+          <a href="#pModal" class="list-group-item">
+            <span class="item-label">Modal View</span>
+            <span class="icons icons-arrows-right"></span>
+          </a>
+          <a href="#pNavigation" class="list-group-item">
+            <span class="item-label">Navigation</span>
+            <span class="icons icons-arrows-right"></span>
+          </a>
+          <a href="#pForming" class="list-group-item">
+            <span class="item-label">Forming</span>
+            <span class="icons icons-arrows-right"></span>
+          </a>
+          <a href="#pProfile" class="list-group-item">
+            <span class="item-label">Profile</span>
+            <span class="icons icons-arrows-right"></span>
+          </a>
+          <a href="#pUpload" class="list-group-item">
+            <span class="item-label">Upload Image</span>
+            <span class="icons icons-arrows-right"></span>
+          </a>
+        </div>
+      </aside>
+      <aside class="profile-aside aside-content">
+        <div class="container-fluid">
+          <div class="forming" id="pLayout">
+            <div class="forming-header">
+              <p class="text-b36 text-black">Layout</p>
+              <p class="text-n14 text-black-lighter-1">Toàn bộ layout chính được sử dụng trong template này</p>
+            </div>
+            <div class="forming-body">
+              <div class="visual-code">
+                <p class="text-b14 text-black-lighter-1"><code>.content</code></p>
+                <p class="text-n12 text-black-lighter-1">Layout này định hình cho phần chính nội dung của toàn bộ trang web</p>
+                <div class="vc">
+                  <aside class="code">
+                    <pre>
+                      <code class="code html">&lt;div class="content">&lt;/div></code>
+                    </pre>
+                  </aside>
+                </div>
+              </div>
+              <div class="visual-code">
+                <p class="text-b18 text-black-lighter-1"><code>.empty-content</code></p>
+                <p class="text-n14 text-black-lighter-1">Empty content là layout xử lý phần hiển thị trống dữ liệu cho trang web, được sử dụng bên trong <code>.content</code>. <code>.empty-show</code> support canh giữa màn hình hiển thị</p>
+                <div class="vc">
+                  <aside class="code">
+                    <pre>
+                      <code class="code html">&lt;div class="content">
+...
+  &lt;div class="empty-content">
+    &lt;div class="empty-show">
+      &lt;img src="../../assets/images/background-request-cash.png" class="bg-empty" />
+      &lt;p class="text-b18 text-black-darker-2">Bạn chưa có Yêu cầu báo giá nào?&lt;/p>
+      &lt;button class="btn btn-transparent btn-red">
+        &lt;p>Gửi yêu cầu báo giá ngay&lt;/p>
+      &lt;/button>
+    &lt;/div>
+  &lt;/div>
+&lt;/div></code>
+                    </pre>
+                  </aside>
+                  <aside class="visual">
+                    <div class="content">
+                      <div class="empty-content">
+                        <div class="empty-show">
+                          <img src="../../assets/images/background-request-cash.png" class="bg-empty"/>
+                          <p class="text-b18 text-black-darker-2">Bạn chưa có Yêu cầu báo giá nào?</p>
+                          <a class="btn btn-transparent btn-red" href="./home-request-price.html">
+                            <p class="text-n14">Gửi yêu cầu báo giá ngay</p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+              <div class="visual-code">
+                <p class="text-b18 text-black-lighter-1"><code>.signin</code></p>
+                <p class="text-n14 text-black-lighter-1">Phần layout xử lý cho các trang bên ngoài trước khi đăng nhập vào website. Chúng ta có thể sử dụng <code>.row</code> và <code>.col-*</code> trong Bootstrap để chia lại layout cho phù hợp.
+                <div class="vc">
+                  <aside class="code">
+                    <pre>
+                      <code class="code html">&lt;div class="signin row">
+  &lt;div class="signin-left">...&lt;/div>
+  &lt;div class="signin-right">...&lt;/div>
+&lt;/div></code>
+                    </pre>
+                  </aside>
+                  <aside class="visual">
+                    <div class="show">
+                      <div class="signin row">
+                        <div class="col-sm-4 signin-left"></div>
+                        <div class="col-sm-8 signin-right"></div>
+                      </div>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+              <div class="visual-code">
+                <p class="text-b18 text-black-lighter-1"><code>.center-page</code></p>
+                <p class="text-n14 text-black-lighter-1">Xử lý canh giữa màn hình.</p>
+                <div class="vc">
+                  <aside class="code">
+                    <pre>
+                      <code class="code html">&lt;div class="center-page">...&lt;/div></code>
+                    </pre>
+                  </aside>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="forming" id="pHeader">
+            <div class="forming-header">
+              <p class="text-b36 text-black">Header</p>
+              <p class="text-n14 text-black-lighter-1">Header được thiết kế cho 2 loại giao diện trước và sau đăng nhập hệ thống, được bọc trong <code>&lt;header>...&lt;/header></code></p>
+            </div>
+            <div class="forming-body">
+              <div class="visual-code">
+                <p class="text-b14 text-black-lighter-1"><code>.header-outside</code></p>
+                <div class="vc">
+                  <aside class="code">
+                    <pre>
+                      <code class="code html">&lt;header>
+  &lt;div class="header-outside">
+  &lt;div class="logo">
+    &lt;img src="../../assets/images/logo-felix-buy.png" />
+    &lt;/div>
+    &lt;div class="more">
+      &lt;p class="text-n14">Bạn chưa có tài khoản?&nbsp;&lt;a class="refer" href="./sign-up.html">Đăng ký&lt;/a>&lt;/p>
+    &lt;/div>
+  &lt;/div>
+  &lt;/header></code>
+                    </pre>
+                  </aside>
+                  <aside class="visual">
+                    <div>
+                      <div class="header-outside" style="background-color: white">
+                        <div class="logo">
+                          <img src="../../assets/images/logo-felix-buy.png" />
+                        </div>
+                        <div class="more">
+                          <p class="text-n14">Bạn chưa có tài khoản?&nbsp;<a class="refer" href="./sign-up.html">Đăng ký</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+              <div class="visual-code">
+                <p class="text-b14 text-black-lighter-1"><code>.header-logined</code></p>
+                <div class="vc">
+                  <aside class="code">
+                    <pre>
+                      <code class="code html">&lt;header>
+  &lt;div class="header-logined">
+    &lt;a class="logo" href="./home-request-price-empty.html">
+      &lt;img src="../../assets/images/logo-felix-buy-clean.png" />
+    &lt;/a>
+    &lt;div class="header-navigation">
+      &lt;div class="navigation">
+        &lt;a class="navigation-item" href="./home-request-price-empty.html">
+          &lt;span class="icons icons-ordering">&lt;/span>
+          &lt;p class="text-b14 text-black-lighter-2">Yêu cầu báo giá&lt;/p>
+          &lt;span class="line">&lt;/span>
+        &lt;/a>
+        &lt;a class="navigation-item active" href="./home-manage-ordering-empty.html">
+          &lt;div class="icons icons-caring">&lt;/div>
+          &lt;p class="text-b14 text-black-lighter-2">Quản lý đơn hàng&lt;/p>
+          &lt;div class="line">&lt;/div>
+        &lt;/a>
+        &lt;a class="navigation-item" href="./home-support.html">
+          &lt;div class="icons icons-support">&lt;/div>
+          &lt;p class="text-b14 text-black-lighter-2">Trợ giúp&lt;/p>
+          &lt;div class="line">&lt;/div>
+        &lt;/a>
+      &lt;/div>
+    &lt;/div>
+    &lt;div class="header-profile">
+      &lt;div class="profile">
+        &lt;div class="profile-show dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          &lt;div class="infor">
+            &lt;p class="text-n14 text-black-lighter-2">Xin chào,&lt;/p>
+            &lt;p class="text-b14 text-black">Võ Đăng Khoa&lt;/p>
+          &lt;/div>
+          &lt;div class="avatar">
+            &lt;!-- &lt;img src="../../assets/images/default-avatar.png" /> -->
+            &lt;span class="icons icons-profile icons-red"></span>
+          &lt;/div>
+          &lt;span class="ic-dropdown icons icons-arrows-down icons-black-lighter-1">&lt;/span>
+        &lt;/div>
+        &lt;div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          &lt;a class="dropdown-item" href="./profile-personalization.html">
+            &lt;span class="icons icons-profile icons-black-darker-2">&lt;/span>
+            &lt;span class="text-n14 text-black">Thông tin cá nhân&lt;/span>
+          &lt;/a>
+          &lt;a class="dropdown-item" href="./profile-change-password.html">
+            &lt;span class="icons icons-key icons-black-darker-2">&lt;/span>
+            &lt;span class="text-n14 text-black">Đổi mật khẩu&lt;/span>
+          &lt;/a>
+          &lt;a class="dropdown-item" href="./profile-manage-address-list.html">
+            &lt;span class="icons icons-address icons-black-darker-2">&lt;/span>
+            &lt;span class="text-n14 text-black">Quản lý địa chỉ&lt;/span>
+          &lt;/a>
+          &lt;a class="dropdown-item text" href="./sign-in.html">
+            &lt;span class="icons icons-shutdown icons-red">&lt;/span>
+            &lt;span class="text-n14 text-red">Thoát&lt;/span>
+          &lt;/a>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/header></code>
+                    </pre>
+                  </aside>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="forming" id="pText"> 
+            <div class="forming-header">
+              <p class="text-b36 text-black">Text, Typographies and Colors stylist</p>
+              <p class="text-n14 text-black-lighter-1">Dưới đây là toàn bộ kiểu chữ, màu sắc và phông chữ được sử dụng trong template. Template hiện tại sử dụng font chữ có hỗ trợ từ Google: <code>font-family: 'Muli', sans-serif</code></p>
+            </div>
+            <div class="forming-body">
+              <p class="text-b18 text-black-lighter-1"><code>.text-*</code></p>
+              <p class="text-n14 text-black-lighter-1">
+                Kiểu chữ phân làm 2 loại <code>.text-b*</code> (<b>in đậm</b>) và <code>.text-n*</code> (in thường). Cỡ chữ trong khoảng <code>12-36px</code>
+              </p>
+              <div class="visual-code">
+                <div class="vc row">
+                  <div class="col-sm-2 text-show">
+                    <p class="text-b12">Text</p>
+                    <code>.text-b12</code>
+                  </div>
+                  <div class="col-sm-2 text-show">
+                    <p class="text-b14">Text</p>
+                    <code>.text-b14</code>
+                  </div>
+                  <div class="col-sm-2 text-show">
+                    <p class="text-b16">Text</p>
+                    <code>.text-b16</code>
+                  </div>
+                  <div class="col-sm-2 text-show">
+                    <p class="text-b18">Text</p>
+                    <code>.text-b18</code>
+                  </div>
+                  <div class="col-sm-2 text-show">
+                    <p class="text-b24">Text</p>
+                    <code>.text-b24</code>
+                  </div>
+                  <div class="col-sm-2 text-show">
+                    <p class="text-b36">Text</p>
+                    <code>.text-b36</code>
+                  </div>
+                </div>
+              </div>
+              <div class="visual-code">
+                <div class="vc row">
+                  <div class="col-sm-2 text-show">
+                    <p class="text-n12">Text</p>
+                    <code>.text-n12</code>
+                  </div>
+                  <div class="col-sm-2 text-show">
+                    <p class="text-n14">Text</p>
+                    <code>.text-n14</code>
+                  </div>
+                  <div class="col-sm-2 text-show">
+                    <p class="text-n16">Text</p>
+                    <code>.text-n16</code>
+                  </div>
+                  <div class="col-sm-2 text-show">
+                    <p class="text-n18">Text</p>
+                    <code>.text-n18</code>
+                  </div>
+                  <div class="col-sm-2 text-show">
+                    <p class="text-n24">Text</p>
+                    <code>.text-n24</code>
+                  </div>
+                  <div class="col-sm-2 text-show">
+                    <p class="text-n36">Text</p>
+                    <code>.text-n36</code>
+                  </div>
+                </div>
+              </div>
+              <div class="visual-code">
+                <p class="text-b18">Color</p>
+                <p class="text-n14 text-black-lighter-1">Màu sắc cũng được phân loại và đặt tên như bên dưới. Khi sử dụng màu sắc để đánh dấu cho text, button, icon, thì ta sẽ thay class <code>--color-*</code> tương ứng với: <code>text-*</code>, <code>btn-*</code>, <code>icons-*</code> </p>
+                <div class="vc row">
+                  <div class="col-sm-3">
+                    <div class="div-show" style="background-color: #FFF5F3;">
+                      <code>#FFF5F3</code>
+                      <code>color: var(--color-red-lighter-2)</code>
+                    </div>
+                    <div class="div-show" style="background-color: #FFF5F3;">
+                      <code>#FFF5F3</code>
+                      <code>color: var(--color-red-lighter-1)</code>
+                    </div>
+                    <div class="div-show" style="background-color: #E24C35;">
+                      <code class="text-white">#E24C35</code>
+                      <code class="text-white">color: var(--color-red)</code>
+                    </div>
+                    <div class="div-show" style="background-color: #975F56;">
+                      <code class="text-white">#975F56</code>
+                      <code class="text-white">color: var(--color-red-darker-1)</code>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="div-show" style="background-color: #C2FFE9;">
+                      <code>#C2FFE9</code>
+                      <code>color: var(--color-green-lighter-1)</code>
+                    </div>
+                    <div class="div-show" style="background-color: #35E2A4;">
+                      <code class="text-white">#35E2A4</code>
+                      <code class="text-white">color: var(--color-green)</code>
+                    </div>
+                    <div class="div-show" style="background-color: #4D97FF;">
+                      <code class="text-white">#4D97FF</code>
+                      <code class="text-white">color: var(--color-blue)</code>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="div-show" style="background-color: #FFFFFF; border: 1px solid #F5F5F5">
+                      <code>#FFFFFF</code>
+                      <code>color: var(--color-white)</code>
+                    </div>
+                    <div class="div-show" style="background-color: #F5F5F5;">
+                      <code>#F5F5F5</code>
+                      <code>color: var(--color-black-lighter-7)</code>
+                    </div>
+                    <div class="div-show" style="background-color: #F9F9FB;">
+                      <code>#F9F9FB</code>
+                      <code>color: var(--color-black-lighter-6)</code>
+                    </div>
+                    <div class="div-show" style="background-color: #F5F6F9;">
+                      <code>#F5F6F9</code>
+                      <code>color: var(--color-black-lighter-5)</code>
+                    </div>
+                    <div class="div-show" style="background-color: #F3F3F3;">
+                      <code>#F3F3F3</code>
+                      <code>color: var(--color-black-lighter-4)</code>
+                    </div>
+                    <div class="div-show" style="background-color: #DDDDED;">
+                      <code>#DDDDED</code>
+                      <code>color: var(--color-black-lighter-3)</code>
+                    </div>
+                    <div class="div-show" style="background-color: #CACACA;">
+                      <code>#CACACA</code>
+                      <code>color: var(--color-black-lighter-2)</code>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="div-show" style="background-color: #5D5D5D">
+                      <code class="text-white">#5D5D5D</code>
+                      <code class="text-white">color: var(--color-black-lighter-1)</code>
+                    </div>
+                    <div class="div-show" style="background-color: #383838">
+                      <code class="text-white">#383838</code>
+                      <code class="text-white">color: var(--color-black)</code>
+                    </div>
+                    <div class="div-show" style="background-color: #222222">
+                      <code class="text-white">#222222</code>
+                      <code class="text-white">color: var(--color-black-darker-1)</code>
+                    </div>
+                    <div class="div-show" style="background-color: #000000">
+                      <code class="text-white">#000000</code>
+                      <code class="text-white">color: var(--color-black-darker-2)</code>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="forming" id="pIcons">
+              <div class="forming-header">
+                <p class="text-b36 text-black">Icons</p>
+                <p class="text-n14 text-black-lighter-1">Icons được sử dụng là trích xuất từ bản thiết kế dạng file <code>.svg</code>. Chúng ta sẽ sử dụng bằng cách kết hợp class <code>.icons.icons-*</code> như sau:</p>
+              </div>
+              <div class="form-body">
+                <div class="visual-code">
+                  <div class="vc">
+                    <aside class="code">
+                      <pre><code class="code html">&lt;div class="icons icons-*">&lt;/div>
+&lt;div class="icons icons-user">&lt;/div></code>
+                    </aside>
+                  </div>
+                  <div class="vc row">
+                    <div class="div-show">
+                      <div class="icons icons-address"></div>
+                      <code class="text-red">.icons-address</code>
+                    </div>
+                    <div class="div-show">
+                      <div class="icons icons-address-o"></div>
+                      <code class="text-red">.icons-address-o</code>
+                    </div>
+                    <div class="div-show">
+                      <div class="icons icons-arrows-down"></div>
+                      <code class="text-red">.icons-arrows-down</code>
+                    </div>
+                    <div class="div-show">
+                      <div class="icons icons-arrows-right"></div>
+                      <code class="text-red">.icons-arrows-right</code>
+                    </div>
+                    <div class="div-show">
+                      <div class="icons icons-arrows-up"></div>
+                      <code class="text-red">.icons-arrows-up</code>
+                    </div>
+                    <div class="div-show">
+                      <div class="icons icons-caring"></div>
+                      <code class="text-red">.icons-caring</code>
+                    </div>
+                    <div class="div-show">
+                      <div class="icons icons-checked"></div>
+                      <code class="text-red">.icons-checked</code>
+                    </div>
+                    <div class="div-show">
+                      <div class="icons icons-email"></div>
+                      <code class="text-red">.icons-email</code>
+                    </div>
+                    <div class="div-show">
+                      <div class="icons icons-enter"></div>
+                      <code class="text-red">.icons-enter</code>
+                    </div>
+                    <div class="div-show">
+                      <div class="icons icons-guideline"></div>
+                      <code class="text-red">.icons-guideline</code>
+                    </div>
+                    <div class="div-show">
+                      <div class="icons icons-key"></div>
+                      <code class="text-red">.icons-key</code>
+                    </div>
+                    <div class="div-show">
+                      <div class="icons icons-key-o"></div>
+                      <code class="text-red">.icons-key-o</code>
+                    </div>
+                    <div class="div-show">
+                      <div class="icons icons-lock"></div>
+                      <code class="text-red">.icons-lock</code>
+                    </div>
+                    <div class="div-show">
+                      <div class="icons icons-mobile"></div>
+                      <code class="text-red">.icons-mobile</code>
+                    </div>
+                    <div class="div-show">
+                      <div class="icons icons-ordering"></div>
+                      <code class="text-red">.icons-ordering</code>
+                    </div>
+                    <div class="div-show">
+                      <div class="icons icons-user"></div>
+                      <code class="text-red">.icons-user-o</code>
+                    </div>
+                    <div class="div-show">
+                      <div class="icons icons-shutdown"></div>
+                      <code class="text-red">.icons-shutdown</code>
+                    </div>
+                    <div class="div-show">
+                      <div class="icons icons-support"></div>
+                      <code class="text-red">.icons-support</code>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="forming" id="pAccordion">
+              <div class="forming-header">
+                <p class="text-b36 text-black">Accordion</p>
+                <p class="text-n14 text-black-lighter-1">Accordion được sử dụng trong trang <a href="home-support.html"><code>Support</code></a></p>
+              </div>  
+              <div class="form-body">
+                <div class="visual-code">
+                  <div class="vc">
+                    <aside class="code">
+                      <pre><code class="code html">&lt;div class="accordion" id="support">
+  &lt;!-- Card item -->
+    &lt;div class="card">
+      &lt;a class="card-header text-b14 text-black"x href="#" id="id1" data-toggle="collapse" data-target="#col1" aria-expanded="false" aria-controls="col1">
+        1. Làm sao để thay đổi thông tin tài khoản? &lt;span class="icons icons-arrows-down">&lt;/span>
+      &lt;/a>
+      &lt;div id="col1" class="collapse" aria-labelledby="id1" data-parent="#support">
+        &lt;div class="card-body text-n14 text-black-lighter-1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacus lacus, auctor eget viverra at, blandit at turpis. Sed congue semper tellus, non vulputate ante pulvinar id. Vestibulum urna nisi, pellentesque vitae blandit at, convallis et sapien. Sed rhoncus ligula eget rhoncus pretium. Donec iaculis finibus posuere. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur neque lectus, fermentum a felis non, rutrum sodales tortor.
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+    &lt;!-- ... -->
+  &lt;/div></code></pre>
+                    </aside>
+                    <aside class="visual">
+                      <div class="accordion" id="support">
+                        <!-- Card item -->
+                        <div class="card">
+                          <a class="card-header text-b14 text-black"x href="#" id="id1" data-toggle="collapse" data-target="#col1" aria-expanded="false" aria-controls="col1">
+                            1. Làm sao để thay đổi thông tin tài khoản? <span class="icons icons-arrows-down"></span>
+                          </a>
+                          <div id="col1" class="collapse" aria-labelledby="id1" data-parent="#support">
+                            <div class="card-body text-n14 text-black-lighter-1">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacus lacus, auctor eget viverra at, blandit at turpis. Sed congue semper tellus, non vulputate ante pulvinar id. Vestibulum urna nisi, pellentesque vitae blandit at, convallis et sapien. Sed rhoncus ligula eget rhoncus pretium. Donec iaculis finibus posuere. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur neque lectus, fermentum a felis non, rutrum sodales tortor.
+                            </div>
+                          </div>
+                        </div>
+                        <!-- ... -->
+                      </div>
+                    </aside>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="forming" id="pAddress">
+            <div class="forming-header">
+              <p class="text-b36 text-black">Address View</p>
+              <p class="text-n14 text-black">Address view </p>
+            </div>  
+            <div class="form-body">
+              <div class="visual-code">
+                <div class="vc">
+                  <aside class="code">
+                    <pre><code class="code html">&lt;div class="address-infor">
+&lt;!-- &lt;div class="address-infor active"> -->  
+  &lt;div class="col-sm-10">
+    &lt;div class="address-item">
+      &lt;label class="address-title text-b14">Họ Tên*&lt;/label>
+      &lt;p class="text-n14">Võ Đăng Khoa&lt;/p>
+    &lt;/div>
+    &lt;div class="address-item">
+      &lt;label class="address-title text-b14">Điện thoại*&lt;/label>
+      &lt;p class="text-n14">0968688668&lt;/p>
+    &lt;/div>
+    &lt;div class="address-item">
+      &lt;label class="address-title text-b14">Địa chỉ cụ thể*&lt;/label>
+      &lt;p class="text-n14">Số 03 Nguyễn Trãi, phường 2, quận 3, TP.HCM&lt;/p>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="col-sm-2">
+    &lt;div class="float-right">
+      &lt;button class="btn choice">&lt;p class="text-n12">Mặc định&lt;/p>&lt;/button>
+      &lt;button class="btn">&lt;p class="text-n12">Sửa&lt;/p>&lt;/button>
+      &lt;button class="btn">&lt;p class="text-n12">Xóa&lt;/p>&lt;/button>
+    &lt;/div>
+  &lt;/div>
+&lt;/div></code></pre>
+                  </aside>
+                  <aside class="visual" style="background-color: #FFFFFF;">
+                    <div class="address-infor active">
+                      <div class="col-sm-10">
+                        <div class="address-item">
+                          <label class="address-title text-b14">Họ Tên*</label>
+                          <p class="text-n14">Võ Đăng Khoa</p>
+                        </div>
+                        <div class="address-item">
+                          <label class="address-title text-b14">Điện thoại*</label>
+                          <p class="text-n14">0968688668</p>
+                        </div>
+                        <div class="address-item">
+                          <label class="address-title text-b14">Địa chỉ cụ thể*</label>
+                          <p class="text-n14">Số 03 Nguyễn Trãi, phường 2, quận 3, TP.HCM</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="float-right">
+                          <button class="btn choice"><p class="text-n12">Mặc định</p></button>
+                          <button class="btn"><p class="text-n12">Sửa</p></button>
+                          <button class="btn"><p class="text-n12">Xóa</p></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="address-infor">
+                      <div class="col-sm-10">
+                        <div class="address-item">
+                          <label class="address-title text-b14">Họ Tên*</label>
+                          <p class="text-n14">Võ Đăng Khoa</p>
+                        </div>
+                        <div class="address-item">
+                          <label class="address-title text-b14">Điện thoại*</label>
+                          <p class="text-n14">0968688668</p>
+                        </div>
+                        <div class="address-item">
+                          <label class="address-title text-b14">Địa chỉ cụ thể*</label>
+                          <p class="text-n14">Số 03 Nguyễn Trãi, phường 2, quận 3, TP.HCM</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="float-right">
+                          <button class="btn choice"><p class="text-n12">Mặc định</p></button>
+                          <button class="btn"><p class="text-n12">Sửa</p></button>
+                          <button class="btn"><p class="text-n12">Xóa</p></button>
+                        </div>
+                      </div>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="forming" id="pButton">
+            <div class="forming-header">
+              <p class="text-b36 text-black">Button</p>
+              <p class="text-n14">Button thừa kế lại các thiết kế của <code>bootstrap 4</code> nên ta chỉ cần tập trung vào các thay đổi nhỏ theo bản thiết kế ban đầu về màu sắc.</p>
+            </div>  
+            <div class="form-body">
+              <div class="visual-code">
+                <div class="vc">
+                  <aside class="code">
+                    <pre><code class="code html">&lt;button class="btn btn-*">button&lt;/button>
+&lt;a class="btn btn-*">link&lt;/a>
+
+&lt;!-- Embed imgage or icon into button -->
+&lt;button class="btn">
+  &lt;img src="../../assets/images/logo-google-plus.png" />
+  &lt;p class="text-n14">Google&lt;/p>
+&lt;/button>
+</code></pre>
+                  </aside>
+                  <aside class="visual visual-white">
+                    <div class="row">
+                      <button class="btn btn-black-lighter-7 col"><p class="text-n12">.btn-black-lighter-7</p></button>
+                      <button class="btn btn-black-lighter-6 col"><p class="text-n12">.btn-black-lighter-6</p></button>
+                      <button class="btn btn-black-lighter-5 col"><p class="text-n12">.btn-black-lighter-5</p></button>
+                      <button class="btn btn-black-lighter-4 col"><p class="text-n12">.btn-black-lighter-4</p></button>
+                    </div>
+                    <div class="row">
+                      <button class="btn btn-black-lighter-3 col"><p class="text-n12">.btn-black-lighter-3</p></button>
+                      <button class="btn btn-black-lighter-2 col"><p class="text-n12">.btn-black-lighter-2</p></button>
+                      <button class="btn btn-black-lighter-1 col"><p class="text-n12">.btn-black-lighter-1</p></button>
+                    </div>
+                    <div class="row">
+                      <button class="btn btn-black col"><p class="text-n12">.btn-black</p></button>
+                      <button class="btn btn-black-darker-1 col"><p class="text-n12">.btn-black-darker-1</p></button>
+                      <button class="btn btn-black-darker-2 col"><p class="text-n12">.btn-black-darker-2</p></button>
+                    </div>
+                    <div class="row">
+                      <button class="btn col"><p class="text-n12">.btn</p></button>
+                      <button class="btn btn-red-lighter-2 col"><p class="text-n12">.btn-red-lighter-2</p></button>
+                      <button class="btn btn-red-lighter-1 col"><p class="text-n12">.btn-red-lighter-1</p></button>
+                      <button class="btn btn-red col"><p class="text-n12">.btn-red</p></button>
+                      <button class="btn btn-red-darker-1 col"><p class="text-n12">.btn-red-darker-1</p></button>
+                    </div>
+                    <div class="row">
+                      <button class="btn btn-green-lighter-1 col"><p class="text-n12">.btn-green-lighter-1</p></button>
+                      <button class="btn btn-green col"><p class="text-n12">.btn-green</p></button>
+                      <button class="btn btn-blue col"><p class="text-n12">.btn-blue</p></button>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <button class="btn btn-transparent">
+                          <img src="../../assets/images/logo-google-plus.png" style="height:30px!important;width:30px;top:4px"/>
+                          <p class="text-n14">Google</p>
+                        </button>
+                      </div>
+                      <div class="col">
+                        <button class="btn btn-transparent">
+                          <img src="../../assets/images/logo-facebook.png" style="height:30px!important;width:30px;top:4px"/>
+                          <p class="text-n14">Facebook</p>
+                        </button>
+                      </div>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="forming" id="pChecked">
+            <div class="forming-header">
+              <p class="text-b36 text-black">Checkbox & Radio button</p>
+              <p class="text-n14">Checkbox và Radio button cũng được thay đổi lại cho phù hợp với thiết kế. Sử dụng class kết hợp <code>.checkbox.checkbox-*</code> và <<code>.radio.radio-*</code></p>
+            </div>  
+            <div class="form-body">
+              <div class="visual-code">
+                <div class="vc">
+                  <aside class="code">
+                    <pre><code class="code html">&lt;!-- Checkbox -->
+&lt;div class="checkbox checkbox-*">
+  &lt;input id="checkbox6" type="checkbox" >
+  &lt;label class="text-n14 text-black-lighter-1" for="checkbox6">Ghi nhớ&lt;/label>
+&lt;/div>
+&lt;!-- Radio group button -->
+&lt;div class="radio-items-group">
+  &lt;div class="radio radio-*">
+    &lt;input type="radio" name="radio2" id="radio4" value="option4" />
+    &lt;label class="text-n14" for="radio4">.radio-blue&lt;/label>
+  &lt;/div>
+&lt;/div></code>
+                    </pre>
+                  </aside>
+                  <aside class="visual visual-white row">
+                    <div class="col">
+                      <div class="checkbox checkbox-red">
+                        <input id="checkbox1" type="checkbox" checked >
+                        <label class="text-n14 text-red" for="checkbox1">.checkbox.checkbox-red</label>
+                      </div>
+                      <div class="checkbox checkbox-red-darker-1">
+                        <input id="checkbox2" type="checkbox" checked >
+                        <label class="text-n14 text-red-darker-1" for="checkbox2">.checkbox.checkbox-red-darker-1</label>
+                      </div>
+                      <div class="checkbox checkbox-green">
+                        <input id="checkbox3" type="checkbox" checked >
+                        <label class="text-n14 text-green" for="checkbox3">.checkbox.checkbox-green</label>
+                      </div>
+                      <div class="checkbox checkbox-blue">
+                        <input id="checkbox4" type="checkbox" checked >
+                        <label class="text-n14 text-blue" for="checkbox4">.checkbox.checkbox-blue</label>
+                      </div>
+                      <div class="checkbox checkbox-black">
+                        <input id="checkbox5" type="checkbox" checked >
+                        <label class="text-n14 text-black" for="checkbox5">.checkbox.checkbox-black</label>
+                      </div>
+                    </div>
+                    <div class="col radio-items-group">
+                      <div class="radio radio-red">
+                        <input type="radio" name="radio2" id="radio1" value="option1" checked />
+                        <label class="text-n14 text-red" for="radio1">.radio-red</label>
+                      </div>
+                      <div class="radio radio-red-darker-1">
+                        <input type="radio" name="radio2" id="radio2" value="option2" checked />
+                        <label class="text-n14 text-red-darker-1" for="radio2">.radio-red-darker-1</label>
+                      </div>
+                      <div class="radio radio-green">
+                        <input type="radio" name="radio2" id="radio3" value="option3" />
+                        <label class="text-n14 text-green" for="radio3">.radio-green</label>
+                      </div>
+                      <div class="radio radio-blue">
+                        <input type="radio" name="radio2" id="radio4" value="option4" />
+                        <label class="text-n14 text-blue" for="radio4">.radio-blue</label>
+                      </div>
+                      <div class="radio radio-black">
+                        <input type="radio" name="radio2" id="radio5" value="option5" />
+                        <label class="text-n14 text-black" for="radio5">.radio-black</label>
+                      </div>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="forming" id="pDashboard">
+            <div class="forming-header">
+              <p class="text-b36 text-black">Dashboard</p>
+              <p class="text-n14">Dashboard sử dụng kết hợp với <code>.list-group</code> của <code>Bootstrap 4</code> thay đổi lại phù với bản thiết kế</p>
+            </div>  
+            <div class="form-body">
+              <div class="visual-code">
+                <div class="vc">
+                  <aside class="code">
+                    <pre><code class="code html">&lt;div class="dashboard list-group">
+  &lt;a href="./profile-personalization.html" class="list-group-item active">
+    &lt;span class="item-label">
+      &lt;span class="icons icons-user-o">&lt;/span>Thông tin cá nhân
+    &lt;/span>
+    &lt;span class="icons icons-arrows-right">&lt;/span>
+  &lt;/a>
+  &lt;a href="./profile-change-password.html" class="list-group-item">
+    &lt;span class="item-label">
+      &lt;span class="icons icons-key-o">&lt;/span>Đổi mật khẩu
+    &lt;/span>
+    &lt;span class="icons icons-arrows-right">&lt;/span>
+  &lt;/a>
+  &lt;a href="./profile-manage-address-list-emtpy.html" class="list-group-item">
+    &lt;span class="item-label">
+      &lt;span class="icons icons-address-o">&lt;/span>Quản lý địa chỉ
+    &lt;/span>
+    &lt;span class="icons icons-arrows-right">&lt;/span>
+  &lt;/a>
+&lt;/div></code></pre>
+                  </aside>
+                  <aside class="visual visual-white">
+                    <div class="dashboard list-group">
+                      <a href="./profile-personalization.html" class="list-group-item active">
+                        <span class="item-label">
+                          <span class="icons icons-user-o"></span>Thông tin cá nhân
+                        </span>
+                        <span class="icons icons-arrows-right"></span>
+                      </a>
+                      <a href="./profile-change-password.html" class="list-group-item">
+                        <span class="item-label">
+                          <span class="icons icons-key-o"></span>Đổi mật khẩu
+                        </span>
+                        <span class="icons icons-arrows-right"></span>
+                      </a>
+                      <a href="./profile-manage-address-list-emtpy.html" class="list-group-item">
+                        <span class="item-label">
+                          <span class="icons icons-address-o"></span>Quản lý địa chỉ
+                        </span>
+                        <span class="icons icons-arrows-right"></span>
+                      </a>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="forming" id="pDashline">
+            <div class="forming-header">
+              <p class="text-b36 text-black">Dash line</p>
+              <p class="text-n14">Dash line là một component nhỏ được xử lý trong trang đăng kí và đăng nhập.</p>
+            </div>  
+            <div class="form-body">
+              <div class="visual-code">
+                <div class="vc">
+                  <aside class="code">
+                    <pre><code class="code html">&lt;div class="dash-line">
+  &lt;div class="line">&lt;/div>
+  &lt;div class="label">
+    &lt;p class="text-b14 text-black-lighter-1">hoặc&lt;/p>
+  &lt;/div>
+&lt;/div></code></pre>
+                  </aside>
+                  <aside class="visual visual-white">
+                    <div class="dash-line">
+                      <div class="line"></div>
+                      <div class="label">
+                        <p class="text-b14 text-black-lighter-1">hoặc</p>
+                      </div>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="forming" id="pDatepicker">
+            <div class="forming-header">
+              <p class="text-b36 text-black">Date Picker</p>
+              <p class="text-n14">Date Picker sử dụng library bên thứ 3 là <a href="https://bootstrap-datepicker.readthedocs.io/en/latest/"><code>bootstrap-datepicker</code></a> để xử lý định dạng loại dữ liệu thời gian.</p>
+            </div>  
+            <div class="form-body">
+              <div class="visual-code">
+                <div class="vc">
+                  <aside class="code">
+                    <pre><code class="code html">&lt;div class="input-view">
+  &lt;label class="col-* col-form-label">
+    &lt;p class="float-right">Ngày sinh&lt;span class="dot">*&lt;/span>&lt;/p>
+  &lt;/label>
+  &lt;div class="col-*">
+    &lt;input type="text" class="form-control datepicker" placeholder="DD/MM/YYYY" />
+  &lt;/div>
+&lt;/div></code></pre>
+                  </aside>
+                  <aside class="visual visual-white">
+                    <div class="input-view">
+                      <label class="col-sm-3 col-form-label">
+                        <p class="float-right">Ngày sinh<span class="dot">*</span></p>
+                      </label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control datepicker" placeholder="DD/MM/YYYY" />
+                      </div>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="forming" id="pInput">
+            <div class="forming-header">
+              <p class="text-b36 text-black">Input & Input clean</p>
+              <p class="text-n14">Input text là mẫu component phổ biến trong các template, ở đây ta sử dụng kết hợp với <code>.form-group .form-part</code> để định hình form cần sử dụng.</p>
+            </div>  
+            <div class="form-body">
+              <div class="visual-code">
+                <div class="vc">
+                  <aside class="code">
+                    <pre><code class="code html">&lt;div class="form-group">
+  ...
+  &lt;div class="form-part row">
+
+    &lt;!-- Clean input -->
+    &lt;div class="input-group mb-3">
+      &lt;span class="input-group-text icons icons-enter">&lt;/span>
+      &lt;input type="password" class="form-control" placeholder="Clean input" aria-label="Username" aria-describedby="basic-addon1">
+    &lt;/div>
+
+    &lt;!-- Input view -->
+    &lt;div class="input-view">
+      &lt;label for="ipass2" class="col-sm-3 col-form-label">
+        &lt;p class="float-right">Input View&lt;span class="dot">*&lt;/span>&lt;/p>
+      &lt;/label>
+      &lt;div class="col-sm-9">
+        &lt;input type="text" class="form-control" id="ipass2" placeholder="Input View">
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/div></code></pre>
+                  </aside>
+                  <aside class="visual visual-white">
+                    <div class="form-part row">
+                      <!-- Clean input -->
+                      <div class="input-group mb-3">
+                        <span class="input-group-text icons icons-enter"></span>
+                        <input type="password" class="form-control" placeholder="Clean input" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+
+                      <!-- Input view -->
+                      <div class="input-view">
+                        <label for="ipass2" class="col-sm-3 col-form-label">
+                          <p class="float-right">Input View<span class="dot">*</span></p>
+                        </label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" id="ipass2" placeholder="Input View">
+                        </div>
+                      </div>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="forming" id="pModal">
+            <div class="forming-header">
+              <p class="text-b36 text-black">Modal View</p>
+              <p class="text-n14">Modal View xử lý popup sử dụng chung cho toàn bộ template</p>
+            </div>  
+            <div class="form-body">
+              <div class="visual-code">
+                <div class="vc">
+                  <aside class="code">
+                    <pre><code class="code html">&lt;!-- Linking to open popup by id -->
+&lt;a class="btn btn-blue" href="#" data-toggle="modal" data-target="#exampleModal">Show popup&lt;/a> 
+
+&lt;!-- Put modal view in the end of body tag -->
+&lt;div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+  &lt;div class="modal-dialog modal-dialog-centered" role="document">
+    &lt;div class="modal-content modal-view">
+      &lt;div class="modal-header">
+        &lt;p class="modal-title text-b18 text-black">Popup Title&lt;/p>
+        &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          &lt;span aria-hidden="true">&times;&lt;/span>
+        &lt;/button>
+      &lt;/div>
+      &lt;div class="modal-body">
+        &lt;p class="text-n12 text-black-lighter-1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        &lt;/p>
+      &lt;/div>
+      &lt;div class="modal-footer">
+        &lt;button class="btn btn-red" data-dismiss="modal">&lt;p>Button&lt;/p></button>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/div></code></pre>
+                  </aside>
+                  <aside class="visual">
+                    <a class="btn btn-blue" href="#" data-toggle="modal" data-target="#exampleModal">Show popup</a> 
+                  </aside>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="forming" id="pNavigation">
+            <div class="forming-header">
+              <p class="text-b36 text-black">Navigation</p>
+              <p class="text-n14">Navigation nằm ở <a href="#pHeader"><code>Header</code></a> có thể tuỳ ý thêm bớt dữ liệu theo màn hình, tuỳ vào nội dung mà ta muốn.</p>
+            </div>  
+            <div class="form-body">
+              <div class="visual-code">
+                <div class="vc">
+                  <aside class="code">
+                    <pre><code class="code html">&lt;div class="navigation">
+  &lt;a class="navigation-item" href="./home-request-price-empty.html">
+    &lt;span class="icons icons-ordering">&lt;/span>
+    &lt;p class="text-b14 text-black-lighter-2">Yêu cầu báo giá&lt;/p>
+    &lt;span class="line">&lt;/span>
+  &lt;/a>
+  &lt;a class="navigation-item active" href="./home-manage-ordering-empty.html">
+    &lt;div class="icons icons-caring">&lt;/div>
+    &lt;p class="text-b14 text-black-lighter-2">Quản lý đơn hàng&lt;/p>
+    &lt;div class="line">&lt;/div>
+  &lt;/a>
+  &lt;a class="navigation-item" href="./home-support.html">
+    &lt;div class="icons icons-support">&lt;/div>
+    &lt;p class="text-b14 text-black-lighter-2">Trợ giúp&lt;/p>
+    &lt;div class="line">&lt;/div>
+  &lt;/a>
+&lt;/div></code></pre>
+                  </aside>
+                  <aside class="visual visual-white">
+                    <div class="navigation" style="height: 80px;">
+                      <a class="navigation-item" href="./home-request-price-empty.html">
+                        <span class="icons icons-ordering"></span>
+                        <p class="text-b14 text-black-lighter-2">Yêu cầu báo giá</p>
+                        <span class="line"></span>
+                      </a>
+                      <a class="navigation-item active" href="./home-manage-ordering-empty.html">
+                        <div class="icons icons-caring"></div>
+                        <p class="text-b14 text-black-lighter-2">Quản lý đơn hàng</p>
+                        <div class="line"></div>
+                      </a>
+                      <a class="navigation-item" href="./home-support.html">
+                        <div class="icons icons-support"></div>
+                        <p class="text-b14 text-black-lighter-2">Trợ giúp</p>
+                        <div class="line"></div>
+                      </a>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="forming" id="pForming">
+            <div class="forming-header">
+              <p class="text-b36 text-black">Forming</p>
+            </div>  
+            <div class="form-body">
+              <div class="visual-code">
+                <div class="vc">
+                  <aside class="code">
+                    <pre><code class="code html">&lt;div class="forming">
+  &lt;div class="forming-header">
+    &lt;p class="text-b18 text-black">Thay đổi mật khẩu&lt;/p>
+    &lt;p class="text-n14 text-black-lighter-2">Vui lòng nhập đầy đủ&lt;/p>
+  &lt;/div>
+  &lt;form class="forming-body">...&lt;/form>
+
+  &lt;!-- Replace: &lt;div /> -->
+  &lt;div class="forming-body">...&lt;/div>
+&lt;/div></code></pre>
+                  </aside>
+                  <aside class="visual visual-white">
+                    <div class="forming">
+                      <div class="forming-header">
+                        <p class="text-b18 text-black">Thay đổi mật khẩu</p>
+                        <p class="text-n14 text-black-lighter-2">Vui lòng nhập đầy đủ</p>
+                      </div>
+                      <form class="forming-body">
+                        <div class="form-group row">
+                          <label for="ipass" class="col-sm-4 col-form-label">
+                            <p class="float-right">Mật khẩu hiện tại<span class="dot">*</span></p>
+                          </label>
+                          <div class="col-sm-8">
+                            <input type="password" class="form-control" id="ipass" placeholder="Vui lòng nhập chính xác">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="ipass2" class="col-sm-4 col-form-label">
+                            <p class="float-right">Mật khẩu mới<span class="dot">*</span></p>
+                          </label>
+                          <div class="col-sm-8">
+                            <input type="password" class="form-control" id="ipass2" placeholder="Vui lòng nhập chính xác">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="ipass3" class="col-sm-4 col-form-label">
+                            <p class="float-right">Nhập lại mật khẩu mới<span class="dot">*</span></p>
+                          </label>
+                          <div class="col-sm-8">
+                            <input type="password" class="form-control" id="ipass3" placeholder="Vui lòng nhập chính xác">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <div class="col-sm-3 col-form-label offset-sm-4">
+                            <button class="btn btn-red"><p class="text-n14">Lưu</p></button>
+                          </div>
+                          <div class="col-sm-3 col-form-label"><button class="btn "><p class="text-n14">Huỷ</p></button></div>
+                        </div>
+                      </form>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="forming" id="pProfile">
+            <div class="forming-header">
+              <p class="text-b36 text-black">Profile</p>
+            </div>  
+            <div class="form-body">
+              <div class="visual-code">
+                <div class="vc">
+                  <aside class="code">
+                    <pre><code class="code html">&lt;div class="profile-page">
+  &lt;aside class="profile-aside aside-dashboard">...&lt;/aside>
+  &lt;aside class="profile-aside aside-content">...&lt;/aside>
+&lt;/div></code></pre>
+                  </aside>
+                  <aside class="visual visual-white">
+                    <div class="profile-page">
+                      <aside class="profile-aside aside-dashboard">
+                        <div style="background-color: #FFF5F3; height: 100%;">Left profile</div>
+                      </aside>
+                      <aside class="profile-aside aside-content">
+                        <div style="background-color: #975F56;; height: 100%;">Right profile</div>
+                      </aside>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="forming" id="pUpload">
+            <div class="forming-header">
+              <p class="text-b36 text-black">Upload Image</p>
+              <p class="text-n14">Upload image hỗ trợ xử lý upload ảnh từ thiết bị cá nhân của người dùng.</p>
+            </div>  
+            <div class="form-body">
+              <div class="visual-code">
+                <div class="vc">
+                  <aside class="code">
+                    <pre><code class="code html">&lt;div class="upload">
+  &lt;img id="show-img" class="upload-img" src="../../assets/images/default-image-upload.png" onchange="" />
+  &lt;label class="upload-label" for="uploadID">Upload&lt;/label>
+  &lt;input type="file" id="uploadID" onchange="readURL(this)" data-img="show-img"/>
+&lt;/div></code></pre>
+                  </aside>
+                  <aside class="visual visual-white">
+                    <div class="upload">
+                      <img id="show-img" class="upload-img" src="../../assets/images/default-image-upload.png" onchange="" style="width: 100px;height: 100px!important;" />
+                      <label class="upload-label" for="uploadID">Upload</label>
+                      <input type="file" id="uploadID" onchange="readURL(this)" data-img="show-img"/>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </aside>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content modal-view">
+        <div class="modal-header">
+          <p class="modal-title text-b18 text-black">Popup Title</p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="text-n12 text-black-lighter-1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-red" data-dismiss="modal"><p>Button</p></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../assets/js/bootstrap.min.js"></script>
+  <script src="../../assets/js/bundle.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+</html>
