@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felix Buy</title>
+  <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=vietnamese" rel="stylesheet">
+  <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../../assets/css/bundle.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <style>
+    .hiddened { display: none; }
+  </style>
+</head>
+<body class="logined">
+  <header>
+    <div class="header-logined">
+      <a class="logo" href="./home-request-price-empty.html">
+        <img src="../../../assets/images/logo-felix-buy-clean.png" />
+      </a>
+      <div class="header-navigation">
+        <div class="navigation">
+          <a class="navigation-item active" href="./home-request/home-request-price.html">
+            <i class="icons icons-ordering"></i>Yêu cầu báo giá
+          </a>
+          <a class="navigation-item" href="../home-management/home-manage-ordering.html">
+            <i class="icons icons-caring"></i>Quản lý đơn hàng
+          </a>
+          <a class="navigation-item" href="../home-support.html">
+            <i class="icons icons-support"></i>Trợ giúp
+          </a>
+        </div>
+      </div>
+      <div class="header-profile">
+        <div class="profile">
+          <div class="profile-show dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="infor">
+              <p class="text-n14 text-black-lighter-2">Xin chào,</p>
+              <p class="text-b14 text-black">Võ Đăng Khoa</p>
+            </div>
+            <div class="avatar">
+              <!-- <img src="../../assets/images/default-avatar.png" /> -->
+              <i class="icons icons-user icons-red"></i>
+            </div>
+            <span class="ic-dropdown icons icons-arrows-down icons-black-lighter-1"></span>
+          </div>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="../profile/profile-personalization.html">
+              <i class="icons icons-user"></i>Thông tin cá nhân
+            </a>
+            <a class="dropdown-item" href="../profile/profile-change-password.html">
+              <i class="icons icons-key"></i>Đổi mật khẩu
+            </a>
+            <a class="dropdown-item" href="../profile/profile-manage-address-list.html">
+              <i class="icons icons-address"></i>Quản lý địa chỉ
+            </a>
+            <a class="dropdown-item text-red" href="../signin/sign-in.html">
+              <i class="icons icons-shutdown icons-red"></i>Thoát
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="content">
+    <div class="content-part">
+      <div class="table-view">
+        <table class="table">
+          <div class="table-header">
+            <p class="text-b18">Yêu cầu báo giá</p>
+          </div>
+          <thead>
+            <tr>
+              <th scope="col">Link sản phẩm*</th>
+              <th scope="col">Màu</th>
+              <th scope="col">Size</th>
+              <th scope="col">Số lượng</th>
+              <th scope="col">Mã giảm giá</th>
+              <th scope="col" data-key="action">Thao tác</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-key="link"><input type="text" class="input-no-border form-control" placeholder="Sao chép link sản phẩm (bắt buộc)" ></td>
+              <td data-key="color"><input type="text" class="input-no-border form-control" placeholder="Chọn màu (nếu có)" ></td>
+              <td data-key="size"><input type="text" class="input-no-border form-control" placeholder="Chọn size (nếu có)" ></td>
+              <td data-key="quatity">
+                <div class="counter" value="1">
+                  <a href="#" class="counter-control" data-target="decrease">-</a>
+                  <span class="number">1</span>
+                  <a href="#" class="counter-control counter-active" data-target="increase">+</a>
+                </div>
+              </td>
+              <td data-key="voucher"><input type="text" class="input-no-border form-control" placeholder="Điền mã giảm giá nếu có" ></td>
+              <td><i class="icons icons-trash" data-key="action" value="delete"></i></td>
+            </tr>
+          </tbody>
+          <caption>
+            <button class="btn btn-blue col-sm-2" data-key="action" value="retrieve-delete">+ Thêm sản phẩm</button>
+          </caption>
+        </table>
+      </div>
+      <div class="row">
+        <button class="btn btn-red col-sm-2 offset-sm-10 confirm">Xác nhận đơn hàng</button>
+      </div>
+    </div>
+    <div class="content-part">
+      <div class="table-view">
+        <table class="table">
+          <div class="table-header">
+            <p class="text-b18">Giỏ hàng</p>
+          </div>
+          <div class="list-group-empty">
+            <p class="text-b18 empty">Bạn chưa tạo địa chỉ giao hàng nào</p>
+          </div>
+          <thead class="hiddened">
+            <tr>
+              <th scope="col">Mã đơn hàng</th>
+              <th scope="col">Ngày tạo</th>
+              <th scope="col">Số lượng sản phẩm</th>
+              <th scope="col">Khuyến mãi</th>
+              <th scope="col">Thành tiền</th>
+              <th scope="col">Trạng thái</th>
+              <th scope="col" data-key="action">Thao tác</th>
+            </tr>
+          </thead>
+          <tbody class="hiddened">
+            <tr>
+              <td data-key="productId"><p>S001</p></td>
+              <td data-key="createTime"><p>01/03/2020</p></td>
+              <td data-key="quatity"><p>2</p></td>
+              <td data-key="voucher"><p class="text-black-lighter-3">N/A</p></td>
+              <td data-key="price"><p class="float-right">- đ</p></td>
+              <td data-key="price"><p>Đang đợi báo giá</p></td>
+              <td>
+                <div class="row">
+                  <a class="col-sm-5 btn btn-transparent" href="./home-request-price-detail.html">
+                    <i class="icons icons-search icons-blue"></i>
+                    <p class="text-blue">Chi tiết</p>
+                  </a>
+                  <span class="col-sm-1 icons icons-trash" style="align-self: center;" data-key="action" value="delete"></span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-key="productId"><p>S002</p></td>
+              <td data-key="createTime"><p>01/03/2020</p></td>
+              <td data-key="quatity"><p>1</p></td>
+              <td data-key="voucher"><p class="text-black-lighter-3">N/A</p></td>
+              <td data-key="price"><p class="float-right">1,000,000 đ</p></td>
+              <td data-key="price"><p>Đã báo giá</p></td>
+              <td>
+                <div class="row">
+                  <a class="col-sm-5 btn btn-transparent" href="./home-request-price-detail.html">
+                    <i class="icons icons-search icons-blue"></i>
+                    <p class="text-blue">Chi tiết</p>
+                  </a>
+                  <span class="col-sm-1 icons icons-trash" style="align-self: center;" data-key="action" value="delete"></span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="shortcut">
+    <a class="guideline" href="../guideline.html">
+      <i class="icons icons-guideline icons-white"></i>
+      <p class="text-n14">Hướng dẫn sử dụng</p>
+    </a>
+  </div>
+  <script src="../../../assets/js/bootstrap.min.js"></script>
+  <script src="../../../assets/js/bundle.js"></script>
+  <script>
+    $(document).ready(function(e) {
+      $('.confirm').click(function(e) {
+        console.log('Toggle:', e);
+        if($('.list-group-empty').is(':visible')) {
+          $('.list-group-empty').hide();
+          $('.hiddened').show();
+        } else {
+          $('.list-group-empty').show();
+          $('.hiddened').hide(); 
+        }
+      })
+    });
+  </script>
+</body>
+</html>

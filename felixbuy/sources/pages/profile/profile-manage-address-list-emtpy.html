@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felix Buy</title>
+  <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=vietnamese" rel="stylesheet">
+  <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../../assets/css/bundle.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+</head>
+<body class="logined">
+  <header>
+    <div class="header-logined">
+      <a class="logo" href="../home-request/home-request-price-empty.html">
+        <img src="../../../assets/images/logo-felix-buy-clean.png" />
+      </a>
+      <div class="header-navigation">
+        <div class="navigation">
+          <a class="navigation-item" href="../home-request/home-request-price.html">
+            <i class="icons icons-ordering"></i>Yêu cầu báo giá
+          </a>
+          <a class="navigation-item" href="../home-management/home-manage-ordering.html">
+            <i class="icons icons-caring"></i>Quản lý đơn hàng
+          </a>
+          <a class="navigation-item" href="../home-support.html">
+            <i class="icons icons-support"></i>Trợ giúp
+          </a>
+        </div>
+      </div>
+      <div class="header-profile">
+        <div class="profile">
+          <div class="profile-show dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="infor">
+              <p class="text-n14 text-black-lighter-2">Xin chào,</p>
+              <p class="text-b14 text-black">Võ Đăng Khoa</p>
+            </div>
+            <div class="avatar">
+              <!-- <img src="../../assets/images/default-avatar.png" /> -->
+              <i class="icons icons-user icons-red"></i>
+            </div>
+            <i class="icons icons-arrows-down icons-black-lighter-1 ic-dropdown"></i>
+          </div>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="./profile-personalization.html">
+              <i class="icons icons-user"></i>Thông tin cá nhân
+            </a>
+            <a class="dropdown-item" href="./profile-change-password.html">
+              <i class="icons icons-key"></i>Đổi mật khẩu
+            </a>
+            <a class="dropdown-item" href="./profile-manage-address-list.html">
+              <i class="icons icons-address"></i>Quản lý địa chỉ
+            </a>
+            <a class="dropdown-item text-red" href="../signin/sign-in.html">
+              <i class="icons icons-shutdown icons-red"></i>Thoát
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="content">
+    <div class="profile-page">
+      <aside class="profile-aside aside-dashboard">
+        <div class="dashboard list-group">
+          <a href="../profile/profile-personalization.html" class="list-group-item">
+            <span class="item-label">
+              <i class="icons icons-user-o"></i>Thông tin cá nhân
+            </span>
+            <i class="icons icons-arrows-right"></i>
+          </a>
+          <a href="../profile/profile-change-password.html" class="list-group-item">
+            <span class="item-label">
+              <i class="icons icons-key"></i>Đổi mật khẩu
+            </span>
+            <i class="icons icons-arrows-right"></i>
+          </a>
+          <a href="../profile/profile-manage-address-list-emtpy.html" class="list-group-item active">
+            <span class="item-label">
+              <i class="icons icons-address"></i>Quản lý địa chỉ
+            </span>
+            <i class="icons icons-arrows-right"></i>
+          </a>
+          <a href="#subDebt" class="list-group-item" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <span class="item-label">
+              <i class="icons icons-debt"></i>Dư nợ
+            </span>
+            <i class="icons icons-plus"></i>
+          </a>
+          <div class="collapse sub-dashboard" id="subDebt">
+            <div class="card card-body">
+              <a href="../profile/profile-debt-manage.html" class="list-group-item">
+                <span class="item-label">Quản lý dư nợ</span>
+                <i class="icons icons-arrows-right"></i>
+              </a>
+              <a href="../profile/profile-debt-history.html" class="list-group-item" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <span class="item-label">Lịch sử</span>
+                <i class="icons icons-arrows-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <aside class="profile-aside aside-content">
+        <div class="container-fluid">
+          <div class="forming">
+            <div class="forming-header">
+              <p class="text-b18 text-black">Thông tin cá nhân</p>
+              <p class="text-n14 text-black-lighter-2">Vui lòng cập nhật thông tin đầy đủ để được nhận ưu đãi từ Felix Buy</p>
+              <a class="btn btn-red col-sm-2" href="../profile/profile-manage-address-new.html"><p class="text-n14">Tạo địa chỉ mới</p></a>
+            </div>
+            <div class="forming-body">
+              <div class="list-group-empty">
+                <p class="text-b18 empty">Bạn chưa tạo địa chỉ giao hàng nào</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <div class="shortcut">
+    <a class="guideline" href="../guideline.html">
+      <i class="icons icons-guideline icons-white"></i>
+      <p class="text-n14">Hướng dẫn sử dụng</p>
+    </a>
+  </div>
+  <script src="../../../assets/js/bootstrap.min.js"></script>
+  <script src="../../../assets/js/bundle.js"></script>
+</body>
+</html>

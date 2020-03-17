@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felix Buy</title>
+  <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=vietnamese" rel="stylesheet">
+  <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../../assets/css/bundle.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+</head>
+<body class="logined">
+  <header>
+    <div class="header-logined">
+      <a class="logo" href="./home-request-price-empty.html">
+        <img src="../../../assets/images/logo-felix-buy-clean.png" />
+      </a>
+      <div class="header-navigation">
+        <div class="navigation">
+          <a class="navigation-item active" href="./home-request/home-request-price.html">
+            <i class="icons icons-ordering"></i>Yêu cầu báo giá
+          </a>
+          <a class="navigation-item" href="../home-management/home-manage-ordering.html">
+            <i class="icons icons-caring"></i>Quản lý đơn hàng
+          </a>
+          <a class="navigation-item" href="../home-support.html">
+            <i class="icons icons-support"></i>Trợ giúp
+          </a>
+        </div>
+      </div>
+      <div class="header-profile">
+        <div class="profile">
+          <div class="profile-show dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="infor">
+              <p class="text-n14 text-black-lighter-2">Xin chào,</p>
+              <p class="text-b14 text-black">Võ Đăng Khoa</p>
+            </div>
+            <div class="avatar">
+              <img src="../../../assets/images/default-avatar.png" />
+              <!-- <i class="icons icons-user icons-red"></i> -->
+            </div>
+            <span class="ic-dropdown icons icons-arrows-down icons-black-lighter-1"></span>
+          </div>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="../profile/profile-personalization.html">
+              <i class="icons icons-user"></i>Thông tin cá nhân
+            </a>
+            <a class="dropdown-item" href="../profile/profile-change-password.html">
+              <i class="icons icons-key"></i>Đổi mật khẩu
+            </a>
+            <a class="dropdown-item" href="../profile/profile-manage-address-list.html">
+              <i class="icons icons-address"></i>Quản lý địa chỉ
+            </a>
+            <a class="dropdown-item text-red" href="../signin/sign-in.html">
+              <i class="icons icons-shutdown icons-red"></i>Thoát
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="content">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item" aria-current="page"><a href="#">Yêu cầu báo giá</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a href="#">S001</a></li>
+      </ol>
+    </nav>
+    <div class="content-part">
+      <div class="table-view">
+        <table class="table">
+          <div class="table-header">
+            <p class="text-b18">Chi tiết đơn hàng</p>
+          </div>
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Tên sản phẩm</th>
+              <th scope="col">Màu</th>
+              <th scope="col">Size</th>
+              <th scope="col">Giá sản phẩm</th>
+              <th scope="col">Phí dịch vụ</th>
+              <th scope="col">Khuyễn mãi</th>
+              <th scope="col">Thành tiền</th>
+              <th scope="col" data-key="action">Thao tác</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-key="image"><img src="../../../assets/images/product-1.png" height="64" width="64" /></td>
+              <td data-key="name"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ...</p></td>
+              <td data-key="color"><p>Cam</p></td>
+              <td data-key="size"><p>40</p></td>
+              <td data-key="price"><p>450,000 đ</p></td>
+              <td data-key="costService"><p>50,000 đ</p></td>
+              <td data-key="discount">0 đ</td>
+              <td data-key="total"><p class="text-red">500,000 đ</p></td>
+              <td><i class="icons icons-trash" data-key="action" value="delete"></i></td>
+            </tr>
+            <tr>
+              <td data-key="image"><img src="../../../assets/images/product-2.png" height="64" width="64" /></td>
+              <td data-key="name"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ...</p></td>
+              <td data-key="color"><p>Đen</p></td>
+              <td data-key="size"><p>40</p></td>
+              <td data-key="price"><p>450,000 đ</p></td>
+              <td data-key="costService"><p>50,000 đ</p></td>
+              <td data-key="discount">0 đ</td>
+              <td data-key="total"><p class="text-red">500,000 đ</p></td>
+              <td><i class="icons icons-trash" data-key="action" value="delete"></i></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="content-between">
+        <button class="btn col-sm-2 confirm btn-transparent" >Xác nhận đơn hàng</button>
+        <div class="text-list">
+          <div class="text-list-item">
+            <label class="tile-left">Giá trị đơn hàng:</label>
+            <p class="tile-right text-red">1,000,000 đ</p>
+          </div>
+          <div class="text-list-item">
+            <label class="tile-left">Phí giao hàng Mỹ - Việt (tính khi về Việt Nam):</label>
+            <p class="tile-right">0 đ</p>
+          </div>
+          <div class="text-list-item">
+            <label class="tile-left">Phí phụ thu (tính khi về VN):</label>
+            <p class="tile-right">0 đ</p>
+          </div>
+          <div class="text-list-item">
+            <label class="tile-left">Giảm giá:</label>
+            <p class="tile-right text-green">-0 đ</p>
+          </div>
+          <div class="text-list-underline"></div>
+          <div class="text-list-item">
+            <label class="tile-left text-b18">Tổng tiền:</label>
+            <p class="tile-right text-b18 text-red">1,000,000 đ</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <a class="btn btn-red col-sm-2 offset-sm-10" href="./home-request-price-detail-claim-infor.html">
+          <p>Tiến hành thanh toán</p>
+          <i class="icons icons-line-arrows-right icons-white"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="shortcut">
+    <a class="guideline" href="../guideline.html">
+      <i class="icons icons-guideline icons-white"></i>
+      <p class="text-n14">Hướng dẫn sử dụng</p>
+    </a>
+  </div>
+  <script src="../../../assets/js/bootstrap.min.js"></script>
+  <script src="../../../assets/js/bundle.js"></script>
+</body>
+</html>

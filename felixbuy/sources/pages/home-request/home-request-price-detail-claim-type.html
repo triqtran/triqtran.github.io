@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felix Buy</title>
+  <link
+    href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=vietnamese"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../../assets/css/bundle.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+</head>
+
+<body class="logined">
+  <header>
+    <div class="header-logined">
+      <a class="logo" href="./home-request-price-empty.html">
+        <img src="../../../assets/images/logo-felix-buy-clean.png" />
+      </a>
+      <div class="header-navigation">
+        <div class="navigation">
+          <a class="navigation-item active" href="./home-request/home-request-price.html">
+            <i class="icons icons-ordering"></i>Yêu cầu báo giá
+          </a>
+          <a class="navigation-item" href="../home-management/home-manage-ordering.html">
+            <i class="icons icons-caring"></i>Quản lý đơn hàng
+          </a>
+          <a class="navigation-item" href="../home-support.html">
+            <i class="icons icons-support"></i>Trợ giúp
+          </a>
+        </div>
+      </div>
+      <div class="header-profile">
+        <div class="profile">
+          <div class="profile-show dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <div class="infor">
+              <p class="text-n14 text-black-lighter-2">Xin chào,</p>
+              <p class="text-b14 text-black">Võ Đăng Khoa</p>
+            </div>
+            <div class="avatar">
+              <img src="../../../assets/images/default-avatar.png" />
+              <!-- <i class="icons icons-user icons-red"></i> -->
+            </div>
+            <span class="ic-dropdown icons icons-arrows-down icons-black-lighter-1"></span>
+          </div>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="../profile/profile-personalization.html">
+              <i class="icons icons-user"></i>Thông tin cá nhân
+            </a>
+            <a class="dropdown-item" href="../profile/profile-change-password.html">
+              <i class="icons icons-key"></i>Đổi mật khẩu
+            </a>
+            <a class="dropdown-item" href="../profile/profile-manage-address-list.html">
+              <i class="icons icons-address"></i>Quản lý địa chỉ
+            </a>
+            <a class="dropdown-item text-red" href="../signin/sign-in.html">
+              <i class="icons icons-shutdown icons-red"></i>Thoát
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="content">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item" aria-current="page"><a href="#">Yêu cầu báo giá</a></li>
+        <li class="breadcrumb-item" aria-current="page"><a href="#">S001</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a href="#">Thanh toán</a></li>
+      </ol>
+    </nav>
+    <div class="content-horizontal">
+      <div class="content-part flex-3 bg-transparent">
+        <div class="step-form success">
+          <div class="step-head">
+            <div class="step-head-left">
+              <p class="step-head-text text-b14">Bước 1:</p>
+              <div class="step-head-triangle"></div>
+            </div>
+            <div class="step-head-right">
+              <p class="text-b14">Thông tin đơn hàng</p>
+              <a class="btn">
+                <i class="icons icons-pencil icons-blue"></i>
+                <p class="text-blue">Thay đổi</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="step-form">
+          <div class="step-head">
+            <div class="step-head-left">
+              <p class="step-head-text text-b14">Bước 2:</p>
+              <div class="step-head-triangle"></div>
+            </div>
+            <div class="step-head-right">
+              <p class="text-b14">Chọn hình thức thanh toán phù hợp</p>
+            </div>
+          </div>
+          <div class="step-body">
+            <div class="tabs-navs">
+              <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+                  aria-controls="v-pills-home" aria-selected="true">
+                  <div class="media">
+                    <img src="../../../assets/images/bank.png" class="align-self-center mr-3" alt="bank">
+                    <div class="media-body">
+                      <p class="mt-0">Thanh toán bằng hình thức chuyển khoản cho FelixBuy</p>
+                    </div>
+                  </div>
+                </a>
+                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                  aria-controls="v-pills-profile" aria-selected="false">
+                  <div class="media">
+                    <img src="../../../assets/images/master-card.png" class="align-self-center mr-3" alt="bank">
+                    <div class="media-body">
+                      <p class="mt-0">Thanh toán online bằng thẻ ghi nợ/Tìn dung quốc tế (Visa, Master Card, JCB)</p>
+                    </div>
+                  </div>
+                </a>
+                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+                  aria-controls="v-pills-messages" aria-selected="false">
+                  <div class="media">
+                    <img src="../../../assets/images/office-home.png" class="align-self-center mr-3" alt="bank">
+                    <div class="media-body">
+                      <p class="mt-0">Thanh toán trực tiếp tại Văn phòng FelixBuy</p>
+                    </div>
+                  </div>
+                </a>
+                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+                  aria-controls="v-pills-settings" aria-selected="false">
+                  <div class="media">
+                    <img src="../../../assets/images/swiss.png" class="align-self-center mr-3" alt="bank">
+                    <div class="media-body">
+                      <p class="mt-0">Thanh toán bằng hình thức Dư nợ</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                  aria-labelledby="v-pills-home-tab">
+                  <div class="mt-0">
+                    <!-- New tab -->
+                    <div class="row-line">
+                      <div class="deposit-view">
+                        <img src="../../../assets/images/deposit-swiss.png" height="22" width="22" />
+                        <p>Số dư <span class="text-b14 text-red">1,000,000 đ</span></p>
+                        <label class="switch switch-green-darker-1 round">
+                          <input type="checkbox"><span class="slider"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row-line">
+                      <p>Quý khách vui lòng chuyển khoản cho FelixBuy theo đúng cú pháp:</p>
+                    </div>
+                    <div class="row-line">
+                      <div class="alert alert-noborder alert-blue-lighter-2" role="alert">
+                        HỌ VÀ TÊN - MÃ ĐƠN HÀNG
+                      </div>
+                    </div>
+                    <div class="row-line">
+                      <p>Để đảm bảo sự an toàn và nhanh chóng trong quá trình xử lý đơn hàng.
+                        Thông tin ngân hàng sẽ được hiển thị, sau khi quý khách nhấn xác nhận đặt hàng.</p>
+                    </div>
+                    <div class="row-line">
+                      <p class="text-b14">1. QUÝ KHÁCH MUỐN THANH TOÁN TRƯỚC:</p>
+                    </div>
+                    <div class="row-line">
+                      <div class="claim-options">
+                        <div class="accordion accordion-fluid accordion-blue-lighter-2" id="support">
+                          <div class="card">
+                            <label class="card-header radio radio-blue" for="radio1" id="id1" data-toggle="collapse"
+                              data-target="#col1" aria-expanded="true" aria-controls="col1">
+                              <input type="radio" name="radio1" id="radio1" value="option4" />
+                              <p class="text-n14 text-black">Thanh toán toàn bộ chi phí đơn hàng </p>
+                            </label>
+                            <div id="col1" class="collapse" aria-labelledby="id1" data-parent="#support">
+                              <div class="card-body">
+                                <div class="text-list text-list-left">
+                                  <div class="text-list-item">
+                                    <label class="tile-left">Tổng giá trị sản phẩm:</label>
+                                    <p class="tile-right">1,000,000 đ</p>
+                                  </div>
+                                  <div class="text-list-item">
+                                    <label class="tile-left">Phí Ship US-VN ( tính khi về Việt Nam):</label>
+                                    <p class="tile-right">+50,000 đ</p>
+                                  </div>
+                                  <div class="text-list-item">
+                                    <label class="tile-left">Phí giao hàng nội địa:</label>
+                                    <p class="tile-right">+50,000 đ</p>
+                                  </div>
+                                  <div class="text-list-underline"></div>
+                                  <div class="text-list-item">
+                                    <label class="tile-left text-b14">Tổng giá trị đơn hàng:</label>
+                                    <p class="tile-right text-b14">1,100,000 đ</p>
+                                  </div>
+                                  <div class="text-list-item">
+                                    <label class="tile-left text-b14">Số tiền cần được thanh toán:</label>
+                                    <p class="tile-right text-b14 text-red">1,100,000 đ</p>
+                                  </div>
+                                  <div class="text-list-item">
+                                    <label class="tile-left text-b14">Số dư hiện tại:</label>
+                                    <p class="tile-right text-b14 text-green">1,000,000 đ</p>
+                                  </div>
+                                  <div class="text-list-underline"></div>
+                                  <div class="text-list-item">
+                                    <label class="tile-left text-b14">Số dư còn lại:</label>
+                                    <p class="tile-right text-b14 text-green">0 đ</p>
+                                  </div>
+                                  <div class="text-list-item">
+                                    <label class="tile-left text-b14">Số tiền còn lại cần được thanh toán:</label>
+                                    <p class="tile-right text-b14 text-red">100,000 đ</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion accordion-fluid accordion-blue-lighter-2" id="support">
+                          <div class="card">
+                            <label class="card-header radio radio-blue" id="id2" for="radio2" href="#"
+                              data-toggle="collapse" data-target="#col2" aria-expanded="false" aria-controls="col2">
+                              <input type="radio" name="radio1" id="radio2" value="option2" />
+                              <p class="text-n14 text-black">Thanh toán 60% chi phí đơn hàng</p>
+                            </label>
+                            <div id="col2" class="collapse" aria-labelledby="id2" data-parent="#support">
+                              <div class="card-body">
+                                <div class="alert alert-yellow" role="alert">
+                                  <i class="icons icons-warning"></i>
+                                  <p class="text-n14 text-black">Nếu quý khách thanh toán 60% giá trị đơn hàng (chưa bao
+                                    gồm phí ship US-VN), FelixBuy sẽ cộng thêm phí xử lý là <span
+                                      class="text-b14">2%</span></p>
+                                </div>
+                                <div class="text-list text-list-left">
+                                  <div class="text-list-item">
+                                    <label class="tile-left">Tổng giá trị sản phẩm:</label>
+                                    <p class="tile-right">1,000,000 đ</p>
+                                  </div>
+                                  <div class="text-list-item">
+                                    <label class="tile-left">Phí xử lý:</label>
+                                    <p class="tile-right">100,000 đ</p>
+                                  </div>
+                                  <div class="text-list-item">
+                                    <label class="tile-left">Phí Ship US-VN ( tính khi về Việt Nam):</label>
+                                    <p class="tile-right">+50,000 đ</p>
+                                  </div>
+                                  <div class="text-list-item">
+                                    <label class="tile-left">Phí giao hàng nội địa:</label>
+                                    <p class="tile-right">+50,000 đ</p>
+                                  </div>
+                                  <div class="text-list-underline"></div>
+                                  <div class="text-list-item">
+                                    <label class="tile-left text-b14">Tổng giá trị đơn hàng:</label>
+                                    <p class="tile-right text-b14">1,200,000 đ</p>
+                                  </div>
+                                  <div class="text-list-item">
+                                    <label class="tile-left text-b14">Số tiền cần được thanh toán để đặt hàng:</label>
+                                    <p class="tile-right text-b14 text-red">840,000 đ</p>
+                                  </div>
+                                  <div class="text-list-item">
+                                    <label class="tile-left">Số tiền còn lại cần thanh toán khi nhận hàng:</label>
+                                    <p class="tile-right">360,000 đ</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row-line">
+                      <p class="text-b14">2. VUI LÒNG CHỌN NGÂN HÀNG THANH TOÁN:</p>
+                    </div>
+                    <div class="row-line">
+                      <div class="nav nav-pills" role="tablist" aria-orientation="horizontal">
+                        <a class="nav-link active" data-toggle="pill" role="tab" aria-selected="true">
+                          <img src="../../../assets/images/vietcombank.png" width="100" class="align-self-center mr-3"
+                            alt="bank">
+                        </a>
+                        <a class="nav-link" data-toggle="pill" role="tab" aria-selected="false">
+                          <img src="../../../assets/images/sacombank.png" width="100" class="align-self-center mr-3"
+                            alt="bank">
+                        </a>
+                        <a class="nav-link" data-toggle="pill" role="tab" aria-selected="false">
+                          <img src="../../../assets/images/techcombank.png" width="100" class="align-self-center mr-3"
+                            alt="bank">
+                        </a>
+                        <a class="nav-link" data-toggle="pill" role="tab" aria-selected="false">
+                          <img src="../../../assets/images/acbbank.png" width="100" class="align-self-center mr-3"
+                            alt="bank">
+                        </a>
+                        <a class="nav-link" data-toggle="pill" role="tab" aria-selected="false">
+                          <img src="../../../assets/images/vpbank.png" width="100" class="align-self-center mr-3"
+                            alt="bank">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="row-line">
+                      <div class="checkbox checkbox-red">
+                        <input id="checkbox6" type="checkbox">
+                        <label class="text-n14 text-black-lighter-1" for="checkbox6">
+                          Tôi đồng ý với <a class="text-blue" href="#" data-toggle="modal"
+                            data-target="#exampleModal">Điều khoản và điều kiện</a> của FelixBuy
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row-line">
+                      <a class="btn btn-red col-sm-4" disabled href="./home-request-price-detail-claim-success.html">
+                        <i class="icons icons-checked icons-white"></i>
+                        <p>Xác nhận đặt hàng</p>
+                      </a>
+                    </div>
+                    <!-- End new tab -->
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                  <div class="mt-0">
+                    <!-- New tab -->
+                    <div class="row-line">
+                      <div class="deposit-view">
+                        <img src="../../../assets/images/deposit-swiss.png" height="22" width="22" />
+                        <p>Số dư <span class="text-b14 text-red">1,000,000 đ</span></p>
+                        <label class="switch switch-green-darker-1 round">
+                          <input type="checkbox"><span class="slider"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row-line">
+                      <p class="text-b14">1. QUÝ KHÁCH MUỐN THANH TOÁN TRƯỚC:</p>
+                    </div>
+                    <div class="row-line">
+                      <div class="claim-options">
+                        <div class="accordion accordion-fluid accordion-blue-lighter-2" id="support">
+                          <div class="card">
+                            <label class="card-header radio radio-blue" for="radio3" id="id3" data-toggle="collapse"
+                              data-target="#col3" aria-expanded="true" aria-controls="col3">
+                              <input type="radio" name="radio3" id="radio3" value="option4" />
+                              <p class="text-n14 text-black">Thanh toán toàn bộ chi phí đơn hàng </p>
+                            </label>
+                            <div id="col3" class="collapse" aria-labelledby="id1" data-parent="#support">
+                              <div class="card-body">
+                                <div class="text-list text-list-left">
+                                  <div class="text-list-item">
+                                    <label class="tile-left">Tổng giá trị sản phẩm:</label>
+                                    <p class="tile-right">1,000,000 đ</p>
+                                  </div>
+                                  <div class="text-list-item">
+                                    <label class="tile-left">Phí kiểm tra thẻ:</label>
+                                    <p class="tile-right">+20,000 đ</p>
+                                  </div>
+                                  <div class="text-list-item">
+                                    <label class="tile-left">Phí Ship US-VN ( tính khi về Việt Nam):</label>
+                                    <p class="tile-right">+50,000 đ</p>
+                                  </div>
+                                  <div class="text-list-item">
+                                    <label class="tile-left">Phí giao hàng nội địa:</label>
+                                    <p class="tile-right">+50,000 đ</p>
+                                  </div>
+                                  <div class="text-list-underline"></div>
+                                  <div class="text-list-item">
+                                    <label class="tile-left text-b14">Tổng giá trị đơn hàng:</label>
+                                    <p class="tile-right text-b14">1,100,000 đ</p>
+                                  </div>
+                                  <div class="text-list-item">
+                                    <label class="tile-left text-b14">Số tiền cần được thanh toán:</label>
+                                    <p class="tile-right text-b14 text-red">1,100,000 đ</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion accordion-fluid accordion-blue-lighter-2" id="support">
+                          <div class="card">
+                            <label class="card-header radio radio-blue" id="id4" for="radio4" href="#"
+                              data-toggle="collapse" data-target="#col4" aria-expanded="false" aria-controls="col4">
+                              <input type="radio" name="radio3" id="radio4" value="option2" />
+                              <p class="text-n14 text-black">Thanh toán 60% chi phí đơn hàng</p>
+                            </label>
+                            <div id="col4" class="collapse" aria-labelledby="id2" data-parent="#support">
+                              <div class="card-body">
+                                <div class="alert alert-yellow" role="alert">
+                                  <i class="icons icons-warning"></i>
+                                  <p class="text-n14 text-black">Nếu quý khách thanh toán 60% giá trị đơn hàng (chưa bao
+                                    gồm phí ship US-VN), FelixBuy sẽ cộng thêm phí xử lý là <span
+                                      class="text-b14">3%</span></p>
+                                </div>
+                                <div class="text-list text-list-left">
+                                  <div class="text-list-item">
+                                    <label class="tile-left">Tổng giá trị sản phẩm:</label>
+                                    <p class="tile-right">1,000,000 đ</p>
+                                  </div>
+                                  <div class="text-list-item">
+                                    <label class="tile-left">Phí xử lý:</label>
+                                    <p class="tile-right">100,000 đ</p>
+                                  </div>
+                                  <div class="text-list-item">
+                                    <label class="tile-left">Phí Ship US-VN ( tính khi về Việt Nam):</label>
+                                    <p class="tile-right">+50,000 đ</p>
+                                  </div>
+                                  <div class="text-list-item">
+                                    <label class="tile-left">Phí giao hàng nội địa:</label>
+                                    <p class="tile-right">+50,000 đ</p>
+                                  </div>
+                                  <div class="text-list-underline"></div>
+                                  <div class="text-list-item">
+                                    <label class="tile-left text-b14">Tổng giá trị đơn hàng:</label>
+                                    <p class="tile-right text-b14">1,200,000 đ</p>
+                                  </div>
+                                  <div class="text-list-item">
+                                    <label class="tile-left text-b14">Số tiền cần được thanh toán để đặt hàng:</label>
+                                    <p class="tile-right text-b14 text-red">840,000 đ</p>
+                                  </div>
+                                  <div class="text-list-item">
+                                    <label class="tile-left">Số tiền còn lại cần thanh toán khi nhận hàng:</label>
+                                    <p class="tile-right">360,000 đ</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row-line">
+                      <p class="text-b14">2. VUI LÒNG CHỌN NGÂN HÀNG THANH TOÁN:</p>
+                    </div>
+                    <div class="row-line">
+                      <div class="nav nav-pills" role="tablist" aria-orientation="horizontal">
+                        <a class="nav-link active" data-toggle="pill" role="tab" aria-selected="true">
+                          <img src="../../../assets/images/visa.png" width="100" class="align-self-center mr-3"
+                            alt="bank">
+                        </a>
+                        <a class="nav-link" data-toggle="pill" role="tab" aria-selected="false">
+                          <img src="../../../assets/images/master-card-logo.png" width="100"
+                            class="align-self-center mr-3" alt="bank">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="row-line">
+                      <div class="checkbox checkbox-red">
+                        <input id="checkbox6" type="checkbox">
+                        <label class="text-n14 text-black-lighter-1" for="checkbox6">
+                          Tôi đồng ý với <a class="text-blue" href="#" data-toggle="modal"
+                            data-target="#exampleModal">Điều khoản và điều kiện</a> của FelixBuy
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row-line">
+                      <button class="btn btn-red col-sm-4" disabled
+                        href="./home-request-price-detail-claim-success.html">
+                        <i class="icons icons-checked icons-white"></i>
+                        <p>Xác nhận đặt hàng</p>
+                      </button>
+                    </div>
+                    <!-- End new tab -->
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                  <div class="mt-0">
+                    <!-- New tab -->
+                    <div class="row-line">
+                      <div class="deposit-view">
+                        <img src="../../../assets/images/deposit-swiss.png" height="22" width="22" />
+                        <p>Số dư <span class="text-b14 text-red">1,000,000 đ</span></p>
+                        <label class="switch switch-green-darker-1 round">
+                          <input type="checkbox"><span class="slider"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row-line">
+                      <p class="text-b14">1. QUÝ KHÁCH MUỐN THANH TOÁN TRƯỚC:</p>
+                    </div>
+                    <div class="row-line">
+                      <div class="claim-options">
+                        <div class="accordion accordion-fluid accordion-blue-lighter-2" id="support">
+                          <div class="card">
+                            <label class="card-header radio radio-blue" for="radio3" id="id3" data-toggle="collapse"
+                              data-target="#col3" aria-expanded="true" aria-controls="col3">
+                              <input type="radio" name="radio3" id="radio3" value="option4" />
+                              <p class="text-n14 text-black">Thanh toán toàn bộ chi phí đơn hàng </p>
+                            </label>
+                            <div id="col3" class="collapse" aria-labelledby="id1" data-parent="#support">
+                              <div class="card-body">
+                                <div class="text-list text-list-left">
+                                  <div class="text-list-item">
+                                    <label class="tile-left">Tổng giá trị sản phẩm:</label>
+                                    <p class="tile-right">1,000,000 đ</p>
+                                  </div>
+                                  <div class="text-list-item">
+                                    <label class="tile-left">Phí giao hàng nội địa:</label>
+                                    <p class="tile-right">+50,000 đ</p>
+                                  </div>
+                                  <div class="text-list-underline"></div>
+                                  <div class="text-list-item">
+                                    <label class="tile-left text-b14">Tổng giá trị đơn hàng:</label>
+                                    <p class="tile-right text-b14">1,100,000 đ</p>
+                                  </div>
+                                  <div class="text-list-item">
+                                    <label class="tile-left text-b14">Số tiền cần được thanh toán:</label>
+                                    <p class="tile-right text-b14 text-red">1,100,000 đ</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion accordion-fluid accordion-blue-lighter-2" id="support">
+                          <div class="card">
+                            <label class="card-header radio radio-blue" id="id4" for="radio4" href="#"
+                              data-toggle="collapse" data-target="#col4" aria-expanded="false" aria-controls="col4">
+                              <input type="radio" name="radio3" id="radio4" value="option2" />
+                              <p class="text-n14 text-black">Thanh toán 60% chi phí đơn hàng</p>
+                            </label>
+                            <div id="col4" class="collapse" aria-labelledby="id2" data-parent="#support">
+                              <div class="card-body">
+                                <div class="alert alert-yellow" role="alert">
+                                  <i class="icons icons-warning"></i>
+                                  <p class="text-n14 text-black">Nếu quý khách thanh toán 60% giá trị đơn hàng (chưa bao
+                                    gồm phí ship US-VN), FelixBuy sẽ cộng thêm phí xử lý là <span
+                                      class="text-b14">%2</span></p>
+                                </div>
+                                <div class="text-list text-list-left">
+                                  <div class="text-list-item">
+                                    <label class="tile-left">Tổng giá trị sản phẩm:</label>
+                                    <p class="tile-right">1,000,000 đ</p>
+                                  </div>
+                                  <div class="text-list-item">
+                                    <label class="tile-left">Phí giao hàng nội địa:</label>
+                                    <p class="tile-right">+50,000 đ</p>
+                                  </div>
+                                  <div class="text-list-underline"></div>
+                                  <div class="text-list-item">
+                                    <label class="tile-left text-b14">Tổng giá trị đơn hàng:</label>
+                                    <p class="tile-right text-b14">1,200,000 đ</p>
+                                  </div>
+                                  <div class="text-list-item">
+                                    <label class="tile-left text-b14">Số tiền cần được thanh toán để đặt hàng:</label>
+                                    <p class="tile-right text-b14 text-red">840,000 đ</p>
+                                  </div>
+                                  <div class="text-list-item">
+                                    <label class="tile-left">Số tiền còn lại cần thanh toán khi nhận hàng:</label>
+                                    <p class="tile-right">360,000 đ</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row-line">
+                      <p class="text-b14">2. ĐẾN FELIXBUY ĐỂ THANH TOÁN:</p>
+                    </div>
+                    <div class="row-line">
+                      <p class="text-black-lighter-2">Quý khách vui lòng đến trực tiếp tại địa chỉ sau, để thanh toán:
+                      </p>
+                    </div>
+                    <div class="row-line">
+                      <div class="media">
+                        <img src="../../../assets/images/location-office.png" height="48" class="align-self-center mr-3"
+                          alt="Location office">
+                        <div class="media-body align-self-center">
+                          <p class="mt-0 text-black text-b14">Địa chỉ:</p>
+                          <p class="mt3">P.302 cc 60 Nguyễn Trãi, P. Bến Thành, Q.1, TP.HCM </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row-line">
+                      <div class="checkbox checkbox-red">
+                        <input id="checkbox6" type="checkbox">
+                        <label class="text-n14 text-black-lighter-1" for="checkbox6">
+                          Tôi đồng ý với <a class="text-blue" href="#" data-toggle="modal"
+                            data-target="#exampleModal">Điều khoản và điều kiện</a> của FelixBuy
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row-line">
+                      <button class="btn btn-red col-sm-4" disabled
+                        href="./home-request-price-detail-claim-success.html">
+                        <i class="icons icons-checked icons-white"></i>
+                        <p>Xác nhận đặt hàng</p>
+                      </button>
+                    </div>
+                    <!-- End new tab -->
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                  <div class="mt-0">
+                    <!-- New tab -->
+                    <div class="row-line">
+                      <div class="deposit-view">
+                        <img src="../../../assets/images/deposit-swiss.png" height="22" width="22" />
+                        <p>Số dư <span class="text-b14 text-red">1,000,000 đ</span></p>
+                        <label class="switch switch-green-darker-1 round">
+                          <input type="checkbox"><span class="slider"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row-line">
+                      <div class="alert alert-yellow" role="alert">
+                        <i class="icons icons-warning"></i>
+                        <p class="text-n14 text-black">Quý khách không có số dư để tiến hành thanh toán đơn hàng. Quý
+                          khách vui lòng nạp thêm vào tài khodư hoặc lựa chọn hình thức thanh toán khác</p>
+                      </div>
+                    </div>
+                    <div class="row-line">
+                      <button class="btn btn-red col-sm-2">Nạp tiền</button>
+                    </div>
+                    <!-- End new tab -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-part bg-transparent">
+        <div class="card">
+          <div class="card-header">
+            <p class="text-b18">Đơn hàng của Quý khách</p>
+          </div>
+          <div class="card-body">
+            <div class="media">
+              <img src="../../../assets/images/product-1.png" class="align-self-start mr-3" alt="product 1">
+              <div class="media-body">
+                <p class="mt-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ...</p>
+                <div class="mt-3">
+                  <div class="text-list text-list-left">
+                    <div class="text-list-item">
+                      <label class="tile-left text-red text-b18">500,000 đ</label>
+                    </div>
+                    <div class="text-list-item">
+                      <label class="tile-left text-black-lighter-2">Màu:</label>
+                      <p class="tile-right text-black-lighter-1">Đen</p>
+                    </div>
+                    <div class="text-list-item">
+                      <label class="tile-left text-black-lighter-2">Size:</label>
+                      <p class="tile-right text-black-lighter-1">40</p>
+                    </div>
+                    <div class="text-list-item">
+                      <label class="tile-left text-black-lighter-2">Mã sản phẩm:</label>
+                      <p class="tile-right text-black-lighter-1">SNK123</p>
+                    </div>
+                    <div class="text-list-item">
+                      <label class="tile-left text-black-lighter-2">Số lượng:</label>
+                      <p class="tile-right text-black-lighter-1">1</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="media">
+              <img src="../../../assets/images/product-2.png" class="align-self-start mr-3" alt="product 1">
+              <div class="media-body">
+                <p class="mt-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ...</p>
+                <div class="mt-3">
+                  <div class="text-list text-list-left">
+                    <div class="text-list-item">
+                      <label class="tile-left text-red text-b18">500,000 đ</label>
+                    </div>
+                    <div class="text-list-item">
+                      <label class="tile-left text-black-lighter-2">Màu:</label>
+                      <p class="tile-right text-black-lighter-1">Đen</p>
+                    </div>
+                    <div class="text-list-item">
+                      <label class="tile-left text-black-lighter-2">Size:</label>
+                      <p class="tile-right text-black-lighter-1">40</p>
+                    </div>
+                    <div class="text-list-item">
+                      <label class="tile-left text-black-lighter-2">Mã sản phẩm:</label>
+                      <p class="tile-right text-black-lighter-1">SNK123</p>
+                    </div>
+                    <div class="text-list-item">
+                      <label class="tile-left text-black-lighter-2">Số lượng:</label>
+                      <p class="tile-right text-black-lighter-1">1</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="shortcut">
+    <a class="guideline" href="../guideline.html">
+      <i class="icons icons-guideline icons-white"></i>
+      <p class="text-n14">Hướng dẫn sử dụng</p>
+    </a>
+  </div>
+  <!-- Modal popup -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content modal-view">
+        <div class="modal-header">
+          <p class="modal-title text-b18 text-black">Điều khoản và Điều kiện của Felixbuy</p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="text-n12 text-black-lighter-1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+          <p class="text-n12 text-black-lighter-1">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+            dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+            sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+            magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+            suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
+            ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas
+            nulla pariatur?
+          </p>
+          <p class="text-n12 text-black-lighter-1">
+            But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
+            will give you a complete account of the system, and expound the actual teachings of the great explorer of
+            the truth, the master-builder
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-red" data-dismiss="modal">
+            <p class="text-n14">Tôi đã hiểu và đồng ý</p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="shortcut">
+    <a class="guideline" href="../guideline.html">
+      <i class="icons icons-guideline icons-white"></i>
+      <p class="text-n14">Hướng dẫn sử dụng</p>
+    </a>
+  </div>
+  <!-- End modal popup -->
+  <script src="../../../assets/js/bootstrap.min.js"></script>
+  <script src="../../../assets/js/bundle.js"></script>
+</body>
+
+</html>
