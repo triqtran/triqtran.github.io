@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felix Buy</title>
+  <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=vietnamese" rel="stylesheet">
+  <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../../assets/css/bundle.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+</head>
+<body class="logined">
+  <header>
+    <div class="header-logined">
+      <a class="logo" href="./home-request-price-empty.html">
+        <img src="../../../assets/images/logo-felix-buy-clean.png" />
+      </a>
+      <div class="header-navigation">
+        <div class="navigation">
+          <a class="navigation-item" href="./home-request/home-request-price.html">
+            <i class="icons icons-ordering"></i>Yêu cầu báo giá
+          </a>
+          <a class="navigation-item" href="../home-management/home-manage-ordering.html">
+            <i class="icons icons-caring"></i>Quản lý đơn hàng
+          </a>
+          <a class="navigation-item active" href="../home-management/home-manage-ordering.html">
+            <i class="icons icons-address"></i>Vận chuyển
+          </a>
+          <a class="navigation-item" href="../home-support.html">
+            <i class="icons icons-support"></i>Trợ giúp
+          </a>
+        </div>
+      </div>
+      <div class="header-profile">
+        <div class="profile">
+          <div class="profile-show dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="infor">
+              <p class="text-n14 text-black-lighter-2">Xin chào,</p>
+              <p class="text-b14 text-black">Võ Đăng Khoa</p>
+            </div>
+            <div class="avatar">
+              <img src="../../../assets/images/default-avatar.png" />
+              <!-- <i class="icons icons-user icons-red"></i> -->
+            </div>
+            <span class="ic-dropdown icons icons-arrows-down icons-black-lighter-1"></span>
+          </div>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="../profile/profile-personalization.html">
+              <i class="icons icons-user"></i>Thông tin cá nhân
+            </a>
+            <a class="dropdown-item" href="../profile/profile-change-password.html">
+              <i class="icons icons-key"></i>Đổi mật khẩu
+            </a>
+            <a class="dropdown-item" href="../profile/profile-manage-address-list.html">
+              <i class="icons icons-address"></i>Quản lý địa chỉ
+            </a>
+            <a class="dropdown-item text-red" href="../signin/sign-in.html">
+              <i class="icons icons-shutdown icons-red"></i>Thoát
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="content">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page"><a href="#">Quản lý vận chuyển</a></li>
+      </ol>
+    </nav>
+    <div class="content-part">
+      <div style="display:flex;align-items:center;">
+        <p class="text-b14 col-sm-3">Thông tin vận chuyển</p>
+        <div class="filter col-sm-9" style="display:flex;justify-content:flex-end;">
+          <div class="col-sm-2">
+            <select class="custom-select" data-placeholder="Trạng thái">
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="col-sm-2">
+            <select class="custom-select" data-placeholder="Hình thức">
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="col-sm-2">
+            <div class="input-view">
+              <input type="text" class="form-control datepicker" placeholder="Từ ngày" />
+              <i class="icons icons-calendar ip-right"></i>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="input-view">
+              <input type="text" class="form-control datepicker" placeholder="Đến ngày" />
+              <i class="icons icons-calendar ip-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="margin: 15px 0;">
+        <table class="table table-hover table-order-detail">
+          <tbody>
+            <tr>
+              <td>
+                <div class="td-group">
+                  <p class="text-b14">Mã vận chuyển:</p>
+                  <a href="./home-transfer-paid-order-progress.html">OT123456</a>
+                </div>
+              </td>
+              <td>
+                <div class="td-group">
+                  <p class="text-b14">Đơn hàng (3):</p>
+                  <div class="alert alert-noborder alert-fit-content alert-blue-lighter-2" role="alert">
+                    <a href="./home-transfer-paid-order-progress.html" class="text-b14 text-blue">SO001</>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="td-group">
+                  <p class="text-b14">Sản phẩm (8):</p>
+                  <div class="media-list" style="display: flex;">
+                    <img src="../../../assets/images/product-1.png" height="64" width="64" />
+                    <img src="../../../assets/images/product-1.png" height="64" width="64" />
+                    <img src="../../../assets/images/product-1.png" height="64" width="64" />
+                    <img src="../../../assets/images/product-1.png" height="64" width="64" />
+                    <img src="../../../assets/images/product-1.png" height="64" width="64" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="td-group">
+                  <p class="text-b14">Trạng thái</p>
+                  <p class="text-b14 text-blue">Đang trên đường đến quý khách</p>
+                </div>
+              </td>
+              <td>
+                <div class="td-group">
+                  <p class="text-b14">Thời gian:</p>
+                  <p class="text-b14 text-black-lighter-2">23-02-2020 12:35:08</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="td-group">
+                  <p class="text-b14">Mã vận chuyển:</p>
+                  <a href="./home-transfer-paid-order-progress.html">OT123456</a>
+                </div>
+              </td>
+              <td>
+                <div class="td-group">
+                  <p class="text-b14">Đơn hàng (3):</p>
+                  <div class="alert alert-noborder alert-fit-content alert-blue-lighter-2" role="alert">
+                    <a href="./home-transfer-paid-order-progress.html" class="text-b14 text-blue">SO001</>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="td-group">
+                  <p class="text-b14">Sản phẩm (8):</p>
+                  <div class="media-list" style="display: flex;">
+                    <img src="../../../assets/images/product-1.png" height="64" width="64" />
+                    <img src="../../../assets/images/product-1.png" height="64" width="64" />
+                    <img src="../../../assets/images/product-1.png" height="64" width="64" />
+                    <img src="../../../assets/images/product-1.png" height="64" width="64" />
+                    <img src="../../../assets/images/product-1.png" height="64" width="64" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="td-group">
+                  <p class="text-b14">Trạng thái</p>
+                  <p class="text-b14 text-blue">Đang trên đường đến quý khách</p>
+                </div>
+              </td>
+              <td>
+                <div class="td-group">
+                  <p class="text-b14">Thời gian:</p>
+                  <p class="text-b14 text-black-lighter-2">23-02-2020 12:35:08</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="td-group">
+                  <p class="text-b14">Mã vận chuyển:</p>
+                  <a href="./home-transfer-paid-order-progress.html">OT123456</a>
+                </div>
+              </td>
+              <td>
+                <div class="td-group">
+                  <p class="text-b14">Đơn hàng (3):</p>
+                  <div class="alert alert-noborder alert-fit-content alert-blue-lighter-2" role="alert">
+                    <a href="./home-transfer-paid-order-progress.html" class="text-b14 text-blue">SO001</>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="td-group">
+                  <p class="text-b14">Sản phẩm (8):</p>
+                  <div class="media-list" style="display: flex;">
+                    <img src="../../../assets/images/product-1.png" height="64" width="64" />
+                    <img src="../../../assets/images/product-1.png" height="64" width="64" />
+                    <img src="../../../assets/images/product-1.png" height="64" width="64" />
+                    <img src="../../../assets/images/product-1.png" height="64" width="64" />
+                    <img src="../../../assets/images/product-1.png" height="64" width="64" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="td-group">
+                  <p class="text-b14">Trạng thái</p>
+                  <p class="text-b14 text-blue">Đang trên đường đến quý khách</p>
+                </div>
+              </td>
+              <td>
+                <div class="td-group">
+                  <p class="text-b14">Thời gian:</p>
+                  <p class="text-b14 text-black-lighter-2">23-02-2020 12:35:08</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="td-group">
+                  <p class="text-b14">Mã vận chuyển:</p>
+                  <a href="./home-transfer-paid-order-progress.html">OT123456</a>
+                </div>
+              </td>
+              <td>
+                <div class="td-group">
+                  <p class="text-b14">Đơn hàng (3):</p>
+                  <div class="alert alert-noborder alert-fit-content alert-blue-lighter-2" role="alert">
+                    <a href="./home-transfer-paid-order-progress.html" class="text-b14 text-blue">SO001</>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="td-group">
+                  <p class="text-b14">Sản phẩm (8):</p>
+                  <div class="media-list" style="display: flex;">
+                    <img src="../../../assets/images/product-1.png" height="64" width="64" />
+                    <img src="../../../assets/images/product-1.png" height="64" width="64" />
+                    <img src="../../../assets/images/product-1.png" height="64" width="64" />
+                    <img src="../../../assets/images/product-1.png" height="64" width="64" />
+                    <img src="../../../assets/images/product-1.png" height="64" width="64" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="td-group">
+                  <p class="text-b14">Trạng thái</p>
+                  <p class="text-b14 text-blue">Đang trên đường đến quý khách</p>
+                </div>
+              </td>
+              <td>
+                <div class="td-group">
+                  <p class="text-b14">Thời gian:</p>
+                  <p class="text-b14 text-black-lighter-2">23-02-2020 12:35:08</p>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="row">
+          <div class="col">
+            <ul class="pagination justify-content-center">
+              <li class="page-item"><a class="page-link" href="#"><i class="icons icons-arrows-left"></i></a></li>
+              <li class="page-item"><a class="page-link" href="#"><i class="icons icons-double-left"></i></a></li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#"><i class="icons icons-double-right"></i></a></li>
+              <li class="page-item"><a class="page-link" href="#"><i class="icons icons-arrows-right"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <div class="show-consise-table">
+              <span>Hiển thị</span>
+              <select class="custom-select" data-placeholder="20">
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <span>trên tổng <b>200</b></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="shortcut">
+    <a class="guideline" href="../guideline.html">
+      <i class="icons icons-guideline icons-white"></i>
+      <p class="text-n14">Hướng dẫn sử dụng</p>
+    </a>
+  </div>
+  <script src="../../../assets/js/bootstrap.min.js"></script>
+  <script src="../../../assets/js/bundle.js"></script>
+</body>
+</html>

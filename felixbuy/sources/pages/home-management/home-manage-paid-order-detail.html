@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felix Buy</title>
+  <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=vietnamese" rel="stylesheet">
+  <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../../assets/css/bundle.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+</head>
+<body class="logined">
+  <header>
+    <div class="header-logined">
+      <a class="logo" href="./home-request-price-empty.html">
+        <img src="../../../assets/images/logo-felix-buy-clean.png" />
+      </a>
+      <div class="header-navigation">
+        <div class="navigation">
+          <a class="navigation-item active" href="./home-request/home-request-price.html">
+            <i class="icons icons-ordering"></i>Yêu cầu báo giá
+          </a>
+          <a class="navigation-item" href="../home-management/home-manage-ordering.html">
+            <i class="icons icons-caring"></i>Quản lý đơn hàng
+          </a>
+          <a class="navigation-item" href="../home-support.html">
+            <i class="icons icons-support"></i>Trợ giúp
+          </a>
+        </div>
+      </div>
+      <div class="header-profile">
+        <div class="profile">
+          <div class="profile-show dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="infor">
+              <p class="text-n14 text-black-lighter-2">Xin chào,</p>
+              <p class="text-b14 text-black">Võ Đăng Khoa</p>
+            </div>
+            <div class="avatar">
+              <img src="../../../assets/images/default-avatar.png" />
+              <!-- <i class="icons icons-user icons-red"></i> -->
+            </div>
+            <span class="ic-dropdown icons icons-arrows-down icons-black-lighter-1"></span>
+          </div>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="../profile/profile-personalization.html">
+              <i class="icons icons-user"></i>Thông tin cá nhân
+            </a>
+            <a class="dropdown-item" href="../profile/profile-change-password.html">
+              <i class="icons icons-key"></i>Đổi mật khẩu
+            </a>
+            <a class="dropdown-item" href="../profile/profile-manage-address-list.html">
+              <i class="icons icons-address"></i>Quản lý địa chỉ
+            </a>
+            <a class="dropdown-item text-red" href="../signin/sign-in.html">
+              <i class="icons icons-shutdown icons-red"></i>Thoát
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="content">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item" aria-current="page"><a href="#">Quản lý đơn hàng</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a href="#">SO001</a></li>
+      </ol>
+    </nav>
+    <div class="content-horizontal">
+      <div class="content-part flex-3" style="padding-top: 16px; padding-bottom: 16px;">
+        <p class="text-black-lighter-2">Ngày đặt hàng: 23-02-2020 12:35:08 </p>
+        <div style="margin: 15px 0; display: flex;">
+          <button class="btn col-sm-3">
+            <i class="icons icons-print"></i>
+            <p>In đơn hàng</p>
+          </button>
+          <button class="btn col-sm-3 btn-black-lighter-2-o" style="margin-left: 10px;">
+            <i class="icons icons-trash"></i>
+            <p>Yêu cầu huỷ đơn</p>
+          </button>
+        </div>
+        <div style="margin: 15px 0;">
+          <table class="table table-hover table-order-detail">
+            <thead>
+              <tr>
+                <th scope="col" colspan="4">
+                  Đợi tracking
+                  <a href="../home-transfer/home-transfer-paid-order.html" class="text-b14 text-blue status-order">Mã vận chuyển OT12345</a>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><img src="../../../assets/images/product-1.png" height="64" width="64" /></th>
+                <td>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ...</p>
+                  <p class="text-black-lighter-2">Màu: Đen</p>
+                  <p class="text-black-lighter-2">Size: 40</p>
+                </td>
+                <td><p>x1</p></td>
+                <td><p class="text-b14 text-red">500,000 d</p></td>
+              </tr>
+              <tr>
+                <th scope="row"><img src="../../../assets/images/product-1.png" height="64" width="64" /></th>
+                <td>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ...</p>
+                  <p class="text-black-lighter-2">Màu: Đen</p>
+                  <p class="text-black-lighter-2">Size: 40</p>
+                </td>
+                <td><p>x1</p></td>
+                <td><p class="text-b14 text-red">500,000 d</p></td>
+              </tr>
+              <tr>
+                <th scope="row"><img src="../../../assets/images/product-1.png" height="64" width="64" /></th>
+                <td>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ...</p>
+                  <p class="text-black-lighter-2">Màu: Đen</p>
+                  <p class="text-black-lighter-2">Size: 40</p>
+                </td>
+                <td><p>x1</p></td>
+                <td><p class="text-b14 text-red">500,000 d</p></td>
+              </tr>
+              <tr>
+                <th scope="row"><img src="../../../assets/images/product-1.png" height="64" width="64" /></th>
+                <td>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ...</p>
+                  <p class="text-black-lighter-2">Màu: Đen</p>
+                  <p class="text-black-lighter-2">Size: 40</p>
+                </td>
+                <td><p>x1</p></td>
+                <td><p class="text-b14 text-red">500,000 d</p></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="content-part bg-transparent">
+        <div class="card">
+          <div class="card-header">
+            <p class="text-b18">Tổng đơn hàng</p>
+          </div>
+          <div class="card-body">
+            <div class="text-list text-list-left">
+              <div class="text-list-item">
+                <label class="tile-left text-black-lighter-2">Giá trị đơn hàng:</label>
+                <p class="tile-right text-black-lighter-1">2,500,000 đ</p>
+              </div>
+              <div class="text-list-item">
+                <label class="tile-left text-black-lighter-2">Phí dịch vụ:</label>
+                <p class="tile-right text-black-lighter-1">50,000 đ</p>
+              </div>
+              <div class="text-list-item">
+                <label class="tile-left text-black-lighter-2">Phí xử lý thẻ tín dụng:</label>
+                <p class="tile-right text-black-lighter-1">10,000 đ</p>
+              </div>
+              <div class="text-list-item">
+                <label class="tile-left text-black-lighter-2">Giảm giá:</label>
+                <p class="tile-right text-black-lighter-1">10,000 đ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <p class="text-b18">Phí vận chuyển Mỹ - Việt Nam</p>
+          </div>
+          <div class="card-body">
+            <div class="text-list text-list-left">
+              <div class="text-list-item">
+                <label class="tile-left text-black text-b14">Tính khi về Việt Nam</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-paid">
+          <div class="card-paid-header">
+            <p>Thông tin giao hàng</p>
+          </div>
+          <div class="card-paid-body">
+            <div class="text-list text-list-left">
+              <div class="text-list-item">
+                <label class="tile-left text-black-lighter-2">Họ và tên:</label>
+                <p class="tile-right text-black-lighter-1">Võ Đăng Khoa</p>
+              </div>
+              <div class="text-list-item">
+                <label class="tile-left text-black-lighter-2">Email:</label>
+                <p class="tile-right text-black-lighter-1">khoa@gmail.com</p>
+              </div>
+              <div class="text-list-item">
+                <label class="tile-left text-black-lighter-2">Số điện thoại:</label>
+                <p class="tile-right text-black-lighter-1">0968688668</p>
+              </div>
+              <div class="text-list-item">
+                <label class="tile-left text-black-lighter-2">Địa chỉ cụ thể:</label>
+                <p class="tile-right text-black-lighter-1">Số 03 Nguyễn Trãi, phường 2, quận 3, TP.HCM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-paid">
+          <div class="card-paid-header">
+            <p>Thông tin thanh toán</p>
+          </div>
+          <div class="card-paid-body">
+            <div class="text-list text-list-left">
+              <div class="text-list-item">
+                <label class="tile-left text-black-lighter-2">Hạn mức thanh toán:</label>
+                <p class="tile-right text-black-lighter-1">Thanh toán toàn bộ</p>
+              </div>
+              <div class="text-list-item">
+                <label class="tile-left text-black-lighter-2">Phương thức thanh toán:</label>
+                <p class="tile-right text-black-lighter-1">Chuyển khoản</p>
+              </div>
+              <div class="text-list-item">
+                <label class="tile-left text-black-lighter-2">Trạng thái:</label>
+                <p class="tile-right text-red">Chờ thanh toán</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="shortcut">
+    <a class="guideline" href="../guideline.html">
+      <i class="icons icons-guideline icons-white"></i>
+      <p class="text-n14">Hướng dẫn sử dụng</p>
+    </a>
+  </div>
+  <script src="../../../assets/js/bootstrap.min.js"></script>
+  <script src="../../../assets/js/bundle.js"></script>
+</body>
+</html>
