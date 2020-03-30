@@ -13,22 +13,22 @@
 <body class="logined">
   <header>
     <div class="header-logined">
-      <a class="logo" href="./home-request-price-empty.html">
+      <a class="logo" href="../home-request/home-request-price-empty.html">
         <img src="../../../assets/images/logo-felix-buy-clean.png" />
       </a>
       <div class="header-navigation">
         <div class="navigation">
-          <a class="navigation-item" href="./home-request/home-request-price.html">
-            <i class="icons icons-ordering"></i>Yêu cầu báo giá
+          <a class="navigation-item" href="../home-request/home-request/home-request-price.html">
+            <i class="icons icons-ordering"></i><p>Yêu cầu báo giá</p>
           </a>
           <a class="navigation-item" href="../home-management/home-manage-ordering.html">
-            <i class="icons icons-caring"></i>Quản lý đơn hàng
+            <i class="icons icons-caring"></i><p>Quản lý đơn hàng</p>
           </a>
           <a class="navigation-item active" href="../home-management/home-manage-ordering.html">
-            <i class="icons icons-address"></i>Vận chuyển
+            <i class="icons icons-address"></i><p>Vận chuyển</p>
           </a>
           <a class="navigation-item" href="../home-support.html">
-            <i class="icons icons-support"></i>Trợ giúp
+            <i class="icons icons-support"></i><p>Trợ giúp</p>
           </a>
         </div>
       </div>
@@ -72,7 +72,7 @@
     <div class="content-part">
       <div style="display:flex;align-items:center;">
         <p class="text-b14 col-sm-3">Thông tin vận chuyển</p>
-        <div class="filter col-sm-9" style="display:flex;justify-content:flex-end;">
+        <div class="filter col-sm-9" style="margin-bottom:0">
           <div class="col-sm-2">
             <select class="custom-select" data-placeholder="Trạng thái">
               <option value="1">One</option>
@@ -101,7 +101,7 @@
           </div>
         </div>
       </div>
-      <div style="margin: 15px 0;">
+      <div class="table-view" style="margin: 15px 0;">
         <table class="table table-hover table-order-detail">
           <tbody>
             <tr>
@@ -266,28 +266,28 @@
             </tr>
           </tbody>
         </table>
-        <div class="row">
-          <div class="col">
-            <ul class="pagination justify-content-center">
-              <li class="page-item"><a class="page-link" href="#"><i class="icons icons-arrows-left"></i></a></li>
-              <li class="page-item"><a class="page-link" href="#"><i class="icons icons-double-left"></i></a></li>
-              <li class="page-item active"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#"><i class="icons icons-double-right"></i></a></li>
-              <li class="page-item"><a class="page-link" href="#"><i class="icons icons-arrows-right"></i></a></li>
-            </ul>
-          </div>
-          <div class="col-sm-4">
-            <div class="show-consise-table">
-              <span>Hiển thị</span>
-              <select class="custom-select" data-placeholder="20">
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-              <span>trên tổng <b>200</b></span>
-            </div>
+      </div>
+      <div class="row" style="height: auto;">
+        <div class="col">
+          <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="#"><i class="icons icons-arrows-left"></i></a></li>
+            <li class="page-item"><a class="page-link" href="#"><i class="icons icons-double-left"></i></a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#"><i class="icons icons-double-right"></i></a></li>
+            <li class="page-item"><a class="page-link" href="#"><i class="icons icons-arrows-right"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <div class="show-consise-table">
+            <span>Hiển thị</span>
+            <select class="custom-select" data-placeholder="20">
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <span>trên tổng <b>200</b></span>
           </div>
         </div>
       </div>
