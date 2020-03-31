@@ -20,16 +20,16 @@
       <div class="header-navigation">
         <div class="navigation">
           <a class="navigation-item" href="../home-request/home-request-price.html">
-            <i class="icons icons-ordering"></i>Yêu cầu báo giá
+            <i class="icons icons-ordering"></i><p>Yêu cầu báo giá</p>
           </a>
           <a class="navigation-item" href="../home-management/home-manage-ordering.html">
-            <i class="icons icons-caring"></i>Quản lý đơn hàng
+            <i class="icons icons-caring"></i><p>Quản lý đơn hàng</p>
           </a>
           <a class="navigation-item" href="../home-transfer/home-transfer-paid-order.html">
-            <i class="icons icons-address"></i>Vận chuyển
+            <i class="icons icons-address"></i><p>Vận chuyển</p>
           </a>
           <a class="navigation-item" href="../home-support.html">
-            <i class="icons icons-support"></i>Trợ giúp
+            <i class="icons icons-support"></i><p>Trợ giúp</p>
           </a>
         </div>
       </div>
@@ -109,7 +109,7 @@
       <aside class="profile-aside aside-content">
         <div class="container-fluid">
           <div class="forming">
-            <div class="forming-header row">
+            <div class="forming-header forming-header-justify-between row">
               <p class="col-sm-6 text-b18 text-black">Cấp độ thành viên</p>
               <a class="btn btn-red col-sm-2 offset-sm-4" href="./profile-debt-recharge.html">Nạp tiền</a>
               <div class="vip-member col-sm-6">
@@ -126,31 +126,67 @@
               </div>  
             </div>
             <div class="form-body">
-              <div class="filter">
-                <div class="col-sm-2">
-                  <select class="custom-select" data-placeholder="Trạng thái">
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-                <div class="col-sm-2">
-                  <select class="custom-select" data-placeholder="Hình thức">
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-                <div class="col-sm-2">
-                  <div class="input-view">
-                    <input type="text" class="form-control datepicker" placeholder="Từ ngày" />
-                    <i class="icons icons-calendar ip-right"></i>
+              <div class="col-sm filter">
+                <p class="filter-title text-b18 text-black">Đơn hàng</p>
+                <div class="filter-form">
+                  <div class="col-sm-2">
+                    <div class="input-view">
+                      <i class="icons icons-search ip-right"></i>
+                      <input type="type" class="form-control" placeholder="Tìm kiếm" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <select class="custom-select" data-placeholder="Trạng thái đơn hàng">
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="input-view">
+                      <input type="text" class="form-control datepicker" placeholder="Từ ngày" />
+                      <i class="icons icons-calendar ip-right"></i>
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="input-view">
+                      <input type="text" class="form-control datepicker" placeholder="Đến ngày" />
+                      <i class="icons icons-calendar ip-right"></i>
+                    </div>
                   </div>
                 </div>
-                <div class="col-sm-2">
-                  <div class="input-view">
-                    <input type="text" class="form-control datepicker" placeholder="Đến ngày" />
-                    <i class="icons icons-calendar ip-right"></i>
+                <a class="btn filter-res" href="#" data-toggle="modal" data-target="#exampleModal">
+                  <i class="icons icons-filter"></i>
+                  <p>Bộ lọc</p>
+                </a>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="modal-filter" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="modal-filter">Bộ lọc</h5>
+                      </div>
+                      <div class="modal-body">
+                        <div class="filter-form">
+                          <div class="input-view">
+                            <i class="icons icons-search ip-right"></i>
+                            <input type="type" class="form-control" placeholder="Tìm kiếm" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                          <select class="custom-select" data-placeholder="Trạng thái đơn hàng">
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                          <div class="input-view">
+                            <input type="text" class="form-control datepicker" placeholder="Từ ngày" />
+                            <i class="icons icons-calendar ip-right"></i>
+                          </div>
+                          <div class="input-view">
+                            <input type="text" class="form-control datepicker" placeholder="Đến ngày" />
+                            <i class="icons icons-calendar ip-right"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -232,12 +268,12 @@
       </aside>
     </div>
   </div>
-  <div class="shortcut">
+  <!-- <div class="shortcut">
     <a class="guideline" href="../guideline.html">
       <i class="icons icons-guideline icons-white"></i>
       <p class="text-n14">Hướng dẫn sử dụng</p>
     </a>
-  </div>
+  </div> -->
   <script src="../../../assets/js/bootstrap.min.js"></script>
   <script src="../../../assets/js/bundle.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
@@ -247,6 +283,9 @@
         format: "dd/mm/yyyy",
         autoclose: true
       });
+      $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+      })
     })
   </script>
 </body>

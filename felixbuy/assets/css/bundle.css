@@ -419,6 +419,10 @@ template {
   background-image: url(../icons/icons-enter.svg)
 }
 
+.icons.icons-filter {
+  background-image: url(../icons/icons-filter.svg);
+}
+
 .icons.icons-guideline {
   background-image: url(../icons/icons-guideline.svg)
 }
@@ -2135,11 +2139,24 @@ body {
 }
 
 .forming .forming-header {
-  margin-bottom: 20px
+  margin-bottom: 20px;
+  align-items: center;
 }
 
 .forming .forming-header p {
   line-height: 2
+}
+.forming .forming-header.forming-header-justify-between {
+  justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+  .forming .forming-header > *{ 
+    width: auto;
+  }
+  .forming .forming-header > .filter {
+    width: 100%;
+  }
 }
 
 .forming form .form-group {
@@ -2782,27 +2799,88 @@ table thead tr th .form-control, table tbody tr td .form-control {
 
 .filter {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.filter .filter-title {
+  font-weight: bold;
+  min-width: 100px;
+}
+
+.filter.filter-vertical {
+  justify-content: flex-start;
+}
+
+.filter .filter-form {
+  display: flex;
   justify-content: flex-end;
   margin-bottom: 15px;
   overflow: overlay;
-  width: 100%;
+}
+
+.filter .filter-form > * {
+  max-width: 200px;
+  margin: 0 10px;
+}
+
+.filter .filter-form > *:first-child {
+  margin-left: 0;
+}
+
+.filter .filter-form > *:last-child {
+  margin-right: 0;
+}
+
+.filter .filter-res {
+  display: none;
 }
 
 @media only screen and (max-width: 1024px) {
-  .filter {
-    justify-content: flex-start;
-    padding: 15px 0;
+  .filter .filter-title {
+    font-size: 24px;
   }
-  .filter .form-control, .filter select {
-    width: auto;
+  .filter .filter-form {
+    display: none;
   }
-  .filter.filter-vertical {
+  .filter .modal .filter-form {
+    display: block;
+    width: 100%;
+  }
+  .filter .modal .filter-form > *{
+    width: 100%;
+    max-width: inherit;
+    margin: 10px 0;
+  }
+  .filter .modal .filter-form .input-view .ip-right{
+    right: 10px;
+    top: 15px;
+  }
+  .filter .filter-form .form-control, .filter select {
+    padding: 10px;
+    height: 50px;
+  }
+  .filter.filter-vertical .filter-form {
     flex-direction: column;
   }
-  .filter button {
+  .filter button, .filter a {
     padding: 10px 0;
     margin: 10px 0 !important;
     height: auto;
+  }
+  .filter.filter.filter-vertical {
+    padding: 0 10px;
+    justify-content: space-between;
+  }
+  .filter.filter-vertical > * {
+    width: 48%;
+  }
+  .filter .filter-res {
+    display: inherit;
+    padding: 5px 0;
+    width: 120px;
   }
 }
 
@@ -3594,16 +3672,12 @@ header {
   }
 
   .profile-aside {
-    flex: 0;
+    /* flex: 0; */
     padding: 10px 0
   }
 
   .profile-aside.aside-content .container-fluid {
     padding: 12px
-  }
-
-  .forming .forming-header {
-    margin-bottom: 10px
   }
 
   .forming form .form-group {
