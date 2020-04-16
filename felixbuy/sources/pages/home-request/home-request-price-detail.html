@@ -55,6 +55,9 @@
             <a class="dropdown-item" href="../profile/profile-manage-address-list.html">
               <i class="icons icons-address"></i>Quản lý địa chỉ
             </a>
+            <a class="dropdown-item" href="../profile/profile-debt-manage.html">
+              <i class="icons icons-debt"></i></i>Dư nợ
+            </a>
             <a class="dropdown-item text-red" href="../signin/sign-in.html">
               <i class="icons icons-shutdown icons-red"></i>Thoát
             </a>
@@ -71,7 +74,7 @@
       </ol>
     </nav>
     <div class="content-part">
-      <div class="table-view">
+      <div class="table-view table-normal">
         <table class="table">
           <div class="table-header">
             <p class="text-b18">Chi tiết đơn hàng</p>
@@ -116,7 +119,10 @@
         </table>
       </div>
       <div class="content-between">
-        <button class="btn btn-red-o col-sm-3 confirm" >Nhập mã khuyến mãi nếu có</button>
+        <div class="col-sm-3">
+          <button class="btn btn-red-o col confirm" >Nhập mã khuyến mãi nếu có</button>
+          <input type="text" class="form-control invisible ip-voucher" placeholder="Nhập mã khuyến mãi" style="margin-top:20px" >
+        </div>
         <div class="text-list">
           <div class="text-list-item">
             <label class="tile-left">Giá trị đơn hàng:</label>
@@ -157,5 +163,10 @@
   </div> -->
   <script src="../../../assets/js/bootstrap.min.js"></script>
   <script src="../../../assets/js/bundle.js"></script>
+  <script>
+    $('.confirm').click(function(e) {
+      $('.ip-voucher').removeClass('invisible')
+    })
+  </script>
 </body>
 </html>
