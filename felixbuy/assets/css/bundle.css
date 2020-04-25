@@ -3405,8 +3405,10 @@ header {
 }
 
 .signin .signin-left .signin-background {
-  width: 108%;
+  width: 150%;
   margin-top: 100px;
+  position: relative;
+  right: 50px;
 }
 
 .signin .signin-left .introduction {
