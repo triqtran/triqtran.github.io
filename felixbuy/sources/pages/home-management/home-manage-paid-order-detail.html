@@ -10,12 +10,8 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <style>
-    .cancel:hover {
-      background-color: var(--color-red-lighter-1);
-    }
-    .cancel:hover p {
-      color: var(--color-red);
-    }
+    .cancel:hover {background-color: var(--color-red-lighter-1);}.cancel:hover p {color: var(--color-red);}
+    .full-width{width:100%;}@media only screen and (max-width: 1024px){.full-width{width:auto;}}
   </style>
 </head>
 <body class="logined">
@@ -155,7 +151,7 @@
             <p class="text-b18">Tổng đơn hàng</p>
           </div>
           <div class="card-body">
-            <div class="text-list text-list-left">
+            <div class="text-list text-list-left full-width">
               <div class="text-list-item">
                 <label class="tile-left text-black-lighter-2">Giá trị đơn hàng:</label>
                 <p class="tile-right text-black-lighter-1">2,500,000 đ</p>
@@ -217,7 +213,7 @@
             <p>Thông tin thanh toán</p>
           </div>
           <div class="card-paid-body">
-            <div class="text-list text-list-left">
+            <div class="text-list text-list-left full-width">
               <div class="text-list-item">
                 <label class="tile-left text-black-lighter-2">Hạn mức thanh toán:</label>
                 <p class="tile-right text-black-lighter-1">Thanh toán toàn bộ</p>
