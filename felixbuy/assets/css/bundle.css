@@ -1892,7 +1892,8 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 80%;
-  margin: 0 40px
+  margin: 0 40px;
+  text-align: center;
 }
 
 .navigation .navigation-item::after {
@@ -3399,7 +3400,8 @@ header {
 .signin .signin-left {
   height: 100%;
   background-color: var(--color-red-lighter-2);
-  padding: 40px
+  padding: 40px;
+  position: relative;
 }
 
 .signin .signin-left .signin-background {
@@ -3410,7 +3412,9 @@ header {
 
 .signin .signin-left .introduction {
   margin-top: 30%;
-  line-height: 30px
+  line-height: 30px;
+  position: absolute;
+  z-index: 2;
 }
 
 .signin .signin-right {
@@ -3798,6 +3802,15 @@ header {
 
   .address-infor .btn:last-child {
     margin-bottom: .5rem
+  }
+}
+
+@media only screen and (max-width: 1135px) {
+  .navigation .navigation-item {
+    justify-content: space-around;
+  }
+  .navigation .navigation-item p {
+    display: none;
   }
 }
 
