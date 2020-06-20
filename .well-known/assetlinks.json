@@ -1,0 +1,25 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.example.firstandroidapp",
+    "sha256_cert_fingerprints":
+    ["35:07:59:AB:3B:04:40:45:97:94:71:19:EB:EE:37:DC:63:93:6E:C8:68:2B:83:6F:CA:8B:2E:71:6F:D3:44:4C"]
+  }
+},
+{
+  "relation": ["delegate_permission/common.get_login_creds"],
+  "target": {
+    "namespace": "web",
+    "site": "https://triqtran.github.io"
+  }
+},
+{
+  "relation": ["delegate_permission/common.get_login_creds"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.example.firstandroidapp",
+    "sha256_cert_fingerprints":
+    ["35:07:59:AB:3B:04:40:45:97:94:71:19:EB:EE:37:DC:63:93:6E:C8:68:2B:83:6F:CA:8B:2E:71:6F:D3:44:4C"]
+  }
+}]
